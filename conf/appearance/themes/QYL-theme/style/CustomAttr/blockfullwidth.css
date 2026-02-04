@@ -1,0 +1,19 @@
+.protyle-wysiwyg:not(:is(.QYLmemoL,.QYLmemoR) .protyle-wysiwyg.QYLmemoProtyle:not(.QYLmemoHide)) [data-node-id][custom-blockfullwidth="fullwidth"] {
+    box-sizing: border-box;
+    margin-left: calc(-1 * var(--QYL-protyle-padding-left) - var(--QYL-protyle-margin, 0px) + 16px) !important;
+    margin-right: calc(-1 * var(--QYL-protyle-padding-right) - var(--QYL-protyle-margin, 0px) + 16px) !important;
+    width: calc(100% + var(--QYL-protyle-padding-left) + var(--QYL-protyle-padding-right)  + var(--QYL-protyle-margin, 0px) * 2 - 32px) !important;
+    max-width: calc(100% + var(--QYL-protyle-padding-left) + var(--QYL-protyle-padding-right) + var(--QYL-protyle-margin, 0px) * 2 - 32px) !important;
+    & iframe {
+        width: 100% !important;
+    }
+    & .iframe-content {
+        width: 100% !important;
+    }
+    & video {
+        width: 100% !important;
+    }
+    & .img>span:nth-child(2) {
+        width: 100% !important;
+    }
+}

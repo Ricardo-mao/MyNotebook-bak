@@ -1,0 +1,96 @@
+/* Siyuan 默认变量和配置 */
+@import url(./styles/vlook/vlook-30-x-bug320.css);
+
+@import url(./styles/my-theme-config.css);
+@import url(./styles/my-theme-config-dk.css);
+
+@import url(./styles/theme-conifg.css);
+@import url(./styles/theme-conifg-dk.css);
+
+/* 编辑器页面布局 */
+@import url(./styles/v-dock-main.css);
+@import url(./styles/v-dock-settings.css);
+@import url(./styles/v-dock-file-tree.css.css);
+@import url(./styles/v-dock-outline-heading-autonumber.css);
+
+/* 基础内容块配置 */
+/* 行级样式 */
+@import url(./styles/v-block-inline-style.css);
+/* 块级样式 */
+@import url(./styles/v-block-para-style.css);
+
+/* 标题样式 */
+@import url(./styles/v-block-para-heading.css);
+@import url(./styles/v-block-para-heading-autonumber.css);
+@import url(./styles/custom-theme-conver-style.css);
+
+
+/* 自定义 */
+@import url(./styles/custom-f-bg.css);
+@import url(./styles/custom-f-kb.css);
+@import url(./styles/custom-f-kbw.css);
+@import url(./styles/custom-f-map.css);
+@import url(./styles/custom-f-sp.css);
+
+
+@import url(./styles/v-splite-by-line-li.css);
+@import url(./styles/v-splite-by-line-bq.css);
+@import url(./styles/v-icon-link.css);
+@import url(./styles/v-span-link.css);
+
+/* 微章样式 */
+@import url(./styles/custom-plugin/codelabel-wz.css);
+/* 引述块 */
+@import url(./styles/v-block-bq-style.css);
+@import url(./styles/custom-plugin/custom-bqcolor.css);
+@import url(./styles/custom-f-callout.css);
+
+@import url(./styles/custom-f-card.css);
+
+@import url(./styles/custom-plugin13/vlook13-config.css);
+@import url(./styles/custom-plugin13/codelabel-wz.css);
+@import url(./styles/custom-plugin13/codelabel-wz-line.css);
+@import url(./styles/custom-plugin13/codelabel-tick.css);
+@import url(./styles/custom-plugin13/codelabel-todo.css);
+@import url(./styles/custom-plugin13/code-rb-coad.css);
+@import url(./styles/custom-plugin13/codelabel-block-bq.css);
+@import url(./styles/custom-plugin13/codelabel-cx.css);
+/*@import url(./styles/custom-plugin13/tab-bqe.css);*/
+@import url(./styles/custom-plugin13/codelabel-pg.css);
+@import url(./styles/custom-plugin13/mult-tag-lv.css);
+
+
+
+
+/* 解决 分栏引用下 display: inline-block 不起作用的问题 */
+.protyle-wysiwyg {
+    display: block; 
+}
+
+/* 修复编辑器内容不随 Siyuan 扩大和缩小的问题 */
+.b3-typography, .protyle-wysiwyg{
+    font-size:var(--b3-font-size-editor) ;
+}
+
+/*图标问题*/
+.emojis__item--current, .emojis__item:hover {
+    background: var(--b3-list-hover);
+}
+
+.emojis__item {
+    font-size: 19px;
+    font-family: var(--b3-font-family-emoji);
+    text-align: center;
+    height: 32px;
+    padding: 4px;
+    cursor: pointer;
+    display: inline-block;
+    transition: var(--b3-transition);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    margin: 1px;
+    overflow: hidden;
+    border-radius: var(--b3-border-radius);
+    width: 32px;
+}
+

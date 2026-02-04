@@ -1,0 +1,97 @@
+html{
+    & :is(.sy__outline, .QYLmobile [data-type="sidebar-outline"]) {
+        & .b3-list-item {
+            & .b3-list-item__graphic {
+                opacity: 0;
+            }
+            &[data-subtype="h1"] .b3-list-item__text::before{
+                content: '❶';
+            }
+            &[data-subtype="h2"] .b3-list-item__text::before{
+                content: '❷';
+            }
+            &[data-subtype="h3"] .b3-list-item__text::before{
+                content: '❸';
+            }
+            &[data-subtype="h4"] .b3-list-item__text::before{
+                content: '❹';
+            }
+            &[data-subtype="h5"] .b3-list-item__text::before{
+                content: '❺';
+            }
+            &[data-subtype="h6"] .b3-list-item__text::before{
+                content: '❻';
+            }
+            & .b3-list-item__text {
+                &::before{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-52%);
+                    z-index: 0;
+                    opacity: 0.5;
+                    font-family: SF Pro;
+                    font-size: 1em;
+                }
+                &:is([data-theme-mode="dark"] .b3-list-item__text) {
+                    &::before {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        & > .fn__flex-1 > .b3-list--background {
+            & > .b3-list-item {
+                & .b3-list-item__text {
+                    &::before{
+                        left: 24px;
+                    }
+                }
+            }
+            & > ul {
+                & > .b3-list-item {
+                    & .b3-list-item__text {
+                        &::before{
+                            left: 42px;
+                        }
+                    }
+                }
+                & > ul {
+                    & > .b3-list-item {
+                        & .b3-list-item__text {
+                            &::before{
+                                left: 60px;
+                            }
+                        }
+                    }
+                    & > ul {
+                        & > .b3-list-item {
+                            & .b3-list-item__text {
+                                &::before{
+                                    left: 78px;
+                                }
+                            }
+                        }
+                        & > ul {
+                            & > .b3-list-item {
+                                & .b3-list-item__text {
+                                    &::before{
+                                        left: 96px;
+                                    }
+                                }
+                            }
+                            & > ul {
+                                & > .b3-list-item {
+                                    & .b3-list-item__text {
+                                        &::before{
+                                            left: 112px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

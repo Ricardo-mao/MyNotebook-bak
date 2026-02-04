@@ -1,0 +1,1402 @@
+{
+  "logLevel": "debug",
+  "appearance": {
+    "mode": 0,
+    "modeOS": false,
+    "darkThemes": [
+      {
+        "name": "midnight",
+        "label": "midnight（默认主题）"
+      },
+      {
+        "name": "Asri",
+        "label": "Asri"
+      },
+      {
+        "name": "QYL-theme",
+        "label": "QYL（QYL-theme）"
+      },
+      {
+        "name": "Tsundoku",
+        "label": "積読（Tsundoku）"
+      },
+      {
+        "name": "mini-vlook",
+        "label": "mini-vlook（简洁版vlook）（mini-vlook）"
+      },
+      {
+        "name": "siyuan_feishustyle",
+        "label": "飞书风格（siyuan_feishustyle）"
+      }
+    ],
+    "lightThemes": [
+      {
+        "name": "daylight",
+        "label": "daylight（默认主题）"
+      },
+      {
+        "name": "Asri",
+        "label": "Asri"
+      },
+      {
+        "name": "Light-Blue",
+        "label": "Light-Blue"
+      },
+      {
+        "name": "QYL-theme",
+        "label": "QYL（QYL-theme）"
+      },
+      {
+        "name": "Tsundoku",
+        "label": "積読（Tsundoku）"
+      },
+      {
+        "name": "chuizi",
+        "label": "锤子（chuizi）"
+      },
+      {
+        "name": "mini-vlook",
+        "label": "mini-vlook（简洁版vlook）（mini-vlook）"
+      },
+      {
+        "name": "zhang-light",
+        "label": "zhang-light"
+      }
+    ],
+    "themeDark": "midnight",
+    "themeLight": "daylight",
+    "themeVer": "1.1.0",
+    "icons": [
+      "ant",
+      "material"
+    ],
+    "icon": "material",
+    "iconVer": "1.36.0",
+    "codeBlockThemeLight": "github",
+    "codeBlockThemeDark": "base16/dracula",
+    "lang": "zh_CN",
+    "themeJS": false,
+    "closeButtonBehavior": 0,
+    "hideStatusBar": false,
+    "statusBar": {
+      "msgTaskDatabaseIndexCommitDisabled": false,
+      "msgTaskHistoryDatabaseIndexCommitDisabled": false,
+      "msgTaskAssetDatabaseIndexCommitDisabled": false,
+      "msgTaskHistoryGenerateFileDisabled": false
+    }
+  },
+  "langs": [
+    {
+      "label": "العربية",
+      "name": "ar_SA"
+    },
+    {
+      "label": "Deutsch",
+      "name": "de_DE"
+    },
+    {
+      "label": "English",
+      "name": "en_US"
+    },
+    {
+      "label": "Español",
+      "name": "es_ES"
+    },
+    {
+      "label": "Français",
+      "name": "fr_FR"
+    },
+    {
+      "label": "עברית",
+      "name": "he_IL"
+    },
+    {
+      "label": "Italiano",
+      "name": "it_IT"
+    },
+    {
+      "label": "日本語",
+      "name": "ja_JP"
+    },
+    {
+      "label": "한국어",
+      "name": "ko_KR"
+    },
+    {
+      "label": "Polski",
+      "name": "pl_PL"
+    },
+    {
+      "label": "Português (Brasil)",
+      "name": "pt_BR"
+    },
+    {
+      "label": "Русский",
+      "name": "ru_RU"
+    },
+    {
+      "label": "Türkçe",
+      "name": "tr_TR"
+    },
+    {
+      "label": "繁體中文",
+      "name": "zh_CHT"
+    },
+    {
+      "label": "简体中文",
+      "name": "zh_CN"
+    }
+  ],
+  "lang": "zh_CN",
+  "fileTree": {
+    "alwaysSelectOpenedFile": true,
+    "openFilesUseCurrentTab": false,
+    "refCreateSaveBox": "",
+    "refCreateSavePath": "",
+    "docCreateSaveBox": "",
+    "docCreateSavePath": "",
+    "maxListCount": 512,
+    "maxOpenTabCount": 8,
+    "allowCreateDeeper": false,
+    "removeDocWithoutConfirm": false,
+    "closeTabsOnStart": false,
+    "useSingleLineSave": true,
+    "largeFileWarningSize": 8,
+    "createDocAtTop": false,
+    "sort": 6,
+    "recentDocsMaxListCount": 32
+  },
+  "tag": {
+    "sort": 4
+  },
+  "editor": {
+    "allowSVGScript": false,
+    "allowHTMLBLockScript": false,
+    "fontSize": 21,
+    "fontSizeScrollZoom": true,
+    "fontFamily": "",
+    "codeSyntaxHighlightLineNum": false,
+    "codeTabSpaces": 0,
+    "codeLineWrap": false,
+    "codeLigatures": false,
+    "displayBookmarkIcon": true,
+    "displayNetImgMark": true,
+    "generateHistoryInterval": 10,
+    "historyRetentionDays": 30,
+    "emoji": [
+      "1f311",
+      "2b50",
+      "1f600"
+    ],
+    "virtualBlockRef": false,
+    "virtualBlockRefExclude": "",
+    "virtualBlockRefInclude": "",
+    "blockRefDynamicAnchorTextMaxLen": 96,
+    "plantUMLServePath": "https://www.plantuml.com/plantuml/svg/~1",
+    "fullWidth": true,
+    "katexMacros": "{}",
+    "readOnly": false,
+    "embedBlockBreadcrumb": false,
+    "listLogicalOutdent": false,
+    "listItemDotNumberClickFocus": true,
+    "floatWindowMode": 0,
+    "dynamicLoadBlocks": 192,
+    "justify": false,
+    "rtl": false,
+    "spellcheck": false,
+    "spellcheckLanguages": [
+      "en-US"
+    ],
+    "onlySearchForDoc": false,
+    "backlinkExpandCount": 8,
+    "backmentionExpandCount": -1,
+    "backlinkContainChildren": true,
+    "backlinkSort": 3,
+    "backmentionSort": 3,
+    "headingEmbedMode": 0,
+    "markdown": {
+      "inlineAsterisk": true,
+      "inlineUnderscore": true,
+      "inlineSup": true,
+      "inlineSub": true,
+      "inlineTag": true,
+      "inlineMath": true,
+      "inlineStrikethrough": true,
+      "inlineMark": true
+    }
+  },
+  "export": {
+    "paragraphBeginningSpace": false,
+    "addTitle": true,
+    "blockRefMode": 4,
+    "blockEmbedMode": 1,
+    "blockRefTextLeft": "",
+    "blockRefTextRight": "",
+    "tagOpenMarker": "#",
+    "tagCloseMarker": "#",
+    "fileAnnotationRefMode": 0,
+    "pandocBin": "/home/ricardo/SiYuan/temp/pandoc/bin/pandoc",
+    "pandocParams": "--reference-doc \"/usr/lib/siyuan-note/pandoc-resources/pandoc-template.docx\"",
+    "docxTemplate": "",
+    "removeAssetsID": false,
+    "markdownYFM": false,
+    "inlineMemo": false,
+    "includeSubDocs": false,
+    "includeRelatedDocs": false,
+    "pdfFooter": "%page / %pages",
+    "pdfWatermarkStr": "",
+    "pdfWatermarkDesc": "",
+    "imageWatermarkStr": "",
+    "imageWatermarkDesc": ""
+  },
+  "graph": {
+    "maxBlocks": 10240,
+    "local": {
+      "dailyNote": false,
+      "type": {
+        "tag": false,
+        "paragraph": false,
+        "heading": false,
+        "math": false,
+        "code": false,
+        "table": false,
+        "list": false,
+        "listItem": false,
+        "blockquote": false,
+        "super": false,
+        "callout": false
+      },
+      "d3": {
+        "nodeSize": 16,
+        "linkWidth": 8,
+        "lineOpacity": 0.36,
+        "centerStrength": 0.015,
+        "collideRadius": 600,
+        "collideStrength": 0.08,
+        "linkDistance": 400,
+        "arrow": true
+      }
+    },
+    "global": {
+      "minRefs": 0,
+      "dailyNote": false,
+      "type": {
+        "tag": false,
+        "paragraph": false,
+        "heading": false,
+        "math": false,
+        "code": false,
+        "table": false,
+        "list": false,
+        "listItem": false,
+        "blockquote": false,
+        "super": false,
+        "callout": false
+      },
+      "d3": {
+        "nodeSize": 16,
+        "linkWidth": 8,
+        "lineOpacity": 0.36,
+        "centerStrength": 0.015,
+        "collideRadius": 600,
+        "collideStrength": 0.08,
+        "linkDistance": 400,
+        "arrow": true
+      }
+    }
+  },
+  "uiLayout": {
+    "bottom": {
+      "data": [],
+      "pin": true
+    },
+    "hideDock": true,
+    "layout": {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [],
+                  "instance": "Wnd"
+                },
+                {
+                  "children": [],
+                  "instance": "Wnd",
+                  "resize": "tb"
+                }
+              ],
+              "direction": "tb",
+              "instance": "Layout",
+              "size": "232px",
+              "type": "left"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "active": true,
+                      "activeTime": "1770173366184",
+                      "children": {
+                        "action": "cb-get-scroll",
+                        "blockId": "20251215135634-arsy8it",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20251113165804-f4nkyyg",
+                        "rootId": "20251215135634-arsy8it"
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "高项-信息系统项目管理师"
+                    },
+                    {
+                      "activeTime": "1770173362553",
+                      "children": {
+                        "action": "cb-get-scroll",
+                        "blockId": "20260202161614-xr8jtct",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20251113165804-f4nkyyg",
+                        "rootId": "20260202161614-xr8jtct"
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "OpenStack"
+                    },
+                    {
+                      "activeTime": "1770173361181",
+                      "children": {
+                        "action": "cb-get-scroll",
+                        "blockId": "20260203102234-88s5q3v",
+                        "instance": "Editor",
+                        "mode": "wysiwyg",
+                        "notebookId": "20251113165804-f4nkyyg",
+                        "rootId": "20260203102234-88s5q3v"
+                      },
+                      "docIcon": "",
+                      "instance": "Tab",
+                      "pin": false,
+                      "title": "云网络组成：VPC，AZ，region"
+                    }
+                  ],
+                  "height": "",
+                  "instance": "Wnd",
+                  "width": ""
+                }
+              ],
+              "direction": "lr",
+              "instance": "Layout",
+              "resize": "lr",
+              "size": "auto",
+              "type": "center"
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "instance": "Wnd"
+                },
+                {
+                  "children": [],
+                  "instance": "Wnd",
+                  "resize": "tb"
+                }
+              ],
+              "direction": "tb",
+              "instance": "Layout",
+              "resize": "lr",
+              "size": "0px",
+              "type": "right"
+            }
+          ],
+          "direction": "lr",
+          "instance": "Layout",
+          "size": "auto",
+          "type": "normal"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "instance": "Wnd"
+            },
+            {
+              "children": [],
+              "instance": "Wnd",
+              "resize": "lr"
+            }
+          ],
+          "direction": "lr",
+          "instance": "Layout",
+          "resize": "tb",
+          "size": "0px",
+          "type": "bottom"
+        }
+      ],
+      "direction": "tb",
+      "instance": "Layout",
+      "type": "normal"
+    },
+    "left": {
+      "data": [
+        [
+          {
+            "hotkey": "⌥1",
+            "hotkeyLangId": "fileTree",
+            "icon": "iconFiles",
+            "show": false,
+            "size": {
+              "height": 0,
+              "width": 232
+            },
+            "title": "文档树",
+            "type": "file"
+          },
+          {
+            "hotkey": "⌥2",
+            "hotkeyLangId": "outline",
+            "icon": "iconAlignCenter",
+            "show": true,
+            "size": {
+              "height": 0,
+              "width": 232
+            },
+            "title": "大纲",
+            "type": "outline"
+          },
+          {
+            "hotkey": "⌥6",
+            "hotkeyLangId": "inbox",
+            "icon": "iconInbox",
+            "show": false,
+            "size": {
+              "height": 0,
+              "width": 320
+            },
+            "title": "收集箱",
+            "type": "inbox"
+          }
+        ],
+        [
+          {
+            "hotkey": "⌥3",
+            "hotkeyLangId": "bookmark",
+            "icon": "iconBookmark",
+            "show": false,
+            "size": {
+              "height": 0,
+              "width": 232
+            },
+            "title": "书签",
+            "type": "bookmark"
+          },
+          {
+            "hotkey": "⌥4",
+            "hotkeyLangId": "tag",
+            "icon": "iconTags",
+            "show": false,
+            "size": {
+              "height": 0,
+              "width": 232
+            },
+            "title": "标签",
+            "type": "tag"
+          }
+        ]
+      ],
+      "pin": true
+    },
+    "right": {
+      "data": [
+        [
+          {
+            "hotkey": "⌥8",
+            "hotkeyLangId": "graphView",
+            "icon": "iconGraph",
+            "show": false,
+            "size": {
+              "height": 0,
+              "width": 320
+            },
+            "title": "关系图",
+            "type": "graph"
+          },
+          {
+            "hotkey": "⌥9",
+            "hotkeyLangId": "globalGraph",
+            "icon": "iconGlobalGraph",
+            "show": false,
+            "size": {
+              "height": 0,
+              "width": 320
+            },
+            "title": "全局关系图",
+            "type": "globalGraph"
+          }
+        ],
+        [
+          {
+            "hotkey": "⌥7",
+            "hotkeyLangId": "backlinks",
+            "icon": "iconLink",
+            "show": false,
+            "size": {
+              "height": 0,
+              "width": 320
+            },
+            "title": "反向链接",
+            "type": "backlink"
+          }
+        ]
+      ],
+      "pin": true
+    }
+  },
+  "userData": "d716d5d6812229ac440f08261821941a3ab0a09ce57cc1f5d80b208bcc51b59d22934798124551d379211e0c576fc89224afe95e6ca9825c32b30933fd92b799394a0c420ab116fec0269f36e0b1731a8abf176e869d589d6ea967b3c711c265b702ad4f745b33f9d587ee59a08eb3f2226abd2a27b5ad2054023d71f9e53a7eee8db5a55319cf06e634973da94197ff699d0df9b0796767fe5a166ade014ffd34efd25eb8ae96c1c82016262e851fc04e24a423e641ae1e2251d27f12d44fd7ad9bd56f5aba4a82444814987356d8a0975eda7a43dec5f0dfdb7436535cccaa678b6595aac25fa2c3c9781ee0fa4c105241e4f453e7ebf8a2d012f335fe682b075172006429c228d28b663f083dffa74e4168b51b27610e6c903e6562107f672d2a6d72933746efd9b53f6a4e7144be35345d85c42c3e703f95645d1f0a088e81fb79e789256cd99e1b49dd3ba28753048e56491ccb5ed52ccc0080760c6f61ab76bbc23b2d40523bc797e90d089fd72c39033d8a8996e1f312c0424dc9bfe069dd0df2bdb0e3ee0afc5b4dcbb98c1ee7bd185cdab986674cba7d87f7cdd6831107325a09434ecb268793a25bc2ff490f25be840c646cb79d581096492ea0d6f3fd9d5d7a13c341a463cdd34c31d2f5b3570294889e3b41f094056f8ae019afe6f22ee1b4287a64025f7346946faf2d30d4faa64454f6cdd21392e9a94f6b31244962a9873abfc8127e7198fa4b07aea4b9e48c85d39a719c610b000b780c65746e2ef466129e250edd331f52f59a17f53abf8562545184914d798d7dfedc8bc446215d027f16d092e780b807fd7e9516e11667823c60b56a04e7b397d6a5d2f3ca42472eca482c5da2bef8b81a33a2c9b59d813ec5cb272631f76b6452959ed799926fbc0cdb6a5b38aeecfcb1fa79f18bd6adfc565d2b92278dd775d46923bb338512fd2339b5f4df86850e1a32db2794b3f46428a5882ee83af59399ae4e3346c35dbfea3c55a2c7ecf4a7347c669b061017d39dd9de0c328083a6ef18cdf81b0b3ab3a3d6d57a1d4c3df1f17112cf814495f5231cf6ca536ddfd1af638058e6140ddb8ee15a70a0a455e1721b6ec987468eb4b4518d1bd780301148f931f889865542eb67c8469787b2702fde3fd8bf33a75715589d9e7615f5c355f8886fc09440ac40190569f7eb6e8a9225a8c976b3b6119000aa9173eff084879195acf4f5279dd947d3a07d20f8267f06ded0766da06fa4f0a2b735d6532d2674a9dd1ae59ce37f296438902c57af3deef26ed135083b4ae2360e09588ce80bec9a6a7c5f84f8aa9169b4667a8f52d4e1eb1b1687d16fc6b7377c5bcc1709847d3690d654cd258ca14615a875ba5efde067ed0b8f760667b0e72f209a62ff9adc5de0f74f01e1a996164ca9186e69300953fd1a71abde0b010233b2532fd94816dde07a32e0b1f4830bb74f9d6e4a076735eb59b976c70e6fd332e15dd47aefc5805081751d8a9795ad0d13bd90a613980b9d4cd10d22a23fac6c6f4e809cf5056604cbdc600ef3b36085cee6b529549a60377ab558ae2f0bd13f2ac0e2226ba028d595b7a5cc18698e44b807288919f6b2969cdb28ae631d44ec440386479be5a7e5d970a6185f352bf3370dd16d7300141da9151c102649d8d9b000c46fed71b85ecd98ea2b93fdbd533a1ea18696229c016ccb008593de66860a0d992176e0340603845fe2d391687a2e0b168f7450842964e81580e723259eac023a852edefdd620cebdd78f898d76edb27f485b1fdd0c4eecf0c06336d76a8be3fa5a083fe9bf798839c34d63e8294c3f74eacd81b2c1317461b2c5f82d1d7ee4b5b300d259db7bd727bad88ad1e6e47abe659763b364ea7844e123162d1bd6b27811461366dbfb8e4c9456c0b9df57917b589cbc3c82731cae6193464579bbd256dea06c5f7858b951dd380871489fee397892fbcd014e5b938593e1a294dc71393350b83aacaf13a85ed0976e58011c936c1ad05c8e3e5647b9695d4cd8c0935779d829a69e1c3a5ef836147eeecf28811ed40fb47595d1a5346feab318846c6231c5923190ce73ab2090437d1ebab006237abb984d69975c3a8d3bd3e479e78c1ece1f9f3a624dc8a6c2273fbb18fd6b9367c57399d2e1beb3c3412f6494c980deea76765decbc693cd73d42ae9c244693c5cf66beacf264dd805dc41931c25c2d8ac7f315cc55fb6e7b3a147fcd992e6b8892bbd8db8c0d88476979c96edff1c98b3dc723aa2845f1d34a766054080339321f153119ac18a7ace978f777775ba3aaadea4b2c55aed2789fd8926c65477ffe064150d273a4fedd57941669eba92c4e634f190db9cc254828efb0e0c4f9821f63a8611d010888f86f976746225a45b15568eb18caeabc06a14d5df272fd4b3f02a20bbf54d30e61422d24c7ca756983a7469322c4863683bf9b2b3fa9fb805b67acbbdcede4f75683d51c5e97792d59489ae08840350013ce4a4d006c3ed11af2053a57f82757e15d42f2f6286bd469f6102f28619d60f74b6a504ebd97760d94ec9b53de77159def4cd988afd34668d32ac9a56c5338d4f3651e6aa821fa9c3aa674aff30c393e148fde459511644a2925d9d596e6c8a0fbd3b84f30ed161924d70ebf633c4d1d85c2fdb8a3487ff5164cbaf1e19fb57ec7d792e15dc3c35f1136c5af25c72d3cf9bf359a203dd7c05801a4023996f4c9b05d989d9acf183e3d12e7234cdcd92075af633ffa48081e08eb7b810008ba9a19ebda9390d079ec5f72849381ca7551db867a42536338f52a73c2f1bc615f7cb17450f7a50c9818dc4c826bce70f7806b2b901c998d3d5616ae702fc506940cdc03bf61b1540ef7cf57c507ba922ef0ff29b0b3b63d6d7a14cf1857ad0ec96f45f6605ea551d867f98efc8fd83cbbd6b367dd12f0179e2a71f4e6600be20d135d499ad0f79eb85f73efae16b4f82a03a3c65d6df11bc8a5dc9410525a57c834daed034fe292da5a8afda9590fedc5c4556adeba17cb8b546e2012af09821692130a12abf89aad857a672fa909b051eb42a4e3f426d5533305f6e391ee67d828976f9cb0576d3620526d7e87656b6809f6342b7ec3128c4eebc0d8fda0c0dac1259c05a1a2cccf12413e8196eb41f7c1fb57ae5523546d7383fb39bcb9182e4d6d352924820c55141f22f5c8320a00a3beb634b8a6c7222fd28ac7d271073520c91fbe41a11b46dc78c6129376e74b9b3d54a945fbd6d87e927c",
+  "account": {
+    "displayTitle": true,
+    "displayVIP": true
+  },
+  "readonly": false,
+  "serverAddrs": [
+    "http://192.168.0.115:39235",
+    "http://192.168.12.1:39235",
+    "http://127.0.0.1:39235"
+  ],
+  "accessAuthCode": "",
+  "system": {
+    "id": "bed42017f78c4185ab0ca87882c5d37f",
+    "name": "MateBook",
+    "kernelVersion": "3.5.4",
+    "os": "linux",
+    "osPlatform": "arch",
+    "container": "std",
+    "isMicrosoftStore": false,
+    "isInsider": false,
+    "homeDir": "/home/ricardo",
+    "workspaceDir": "/home/ricardo/SiYuan",
+    "appDir": "/usr/lib/siyuan-note",
+    "confDir": "/home/ricardo/SiYuan/conf",
+    "dataDir": "/home/ricardo/SiYuan/data",
+    "networkServe": false,
+    "networkProxy": {
+      "scheme": "",
+      "host": "",
+      "port": ""
+    },
+    "downloadInstallPkg": true,
+    "autoLaunch2": 0,
+    "lockScreenMode": 0,
+    "disabledFeatures": [],
+    "microsoftDefenderExcluded": false
+  },
+  "keymap": {
+    "editor": {
+      "general": {
+        "ai": {
+          "custom": "",
+          "default": ""
+        },
+        "aiWriting": {
+          "custom": "",
+          "default": ""
+        },
+        "alignCenter": {
+          "custom": "⌥C",
+          "default": "⌥C"
+        },
+        "alignLeft": {
+          "custom": "⌥L",
+          "default": "⌥L"
+        },
+        "alignRight": {
+          "custom": "⌥R",
+          "default": "⌥R"
+        },
+        "attr": {
+          "custom": "⌥⌘A",
+          "default": "⌥⌘A"
+        },
+        "backlinks": {
+          "custom": "⌥B",
+          "default": "⌥B"
+        },
+        "collapse": {
+          "custom": "⌘↑",
+          "default": "⌘↑"
+        },
+        "copyBlockEmbed": {
+          "custom": "⇧⌘E",
+          "default": "⇧⌘E"
+        },
+        "copyBlockRef": {
+          "custom": "⇧⌘C",
+          "default": "⇧⌘C"
+        },
+        "copyHPath": {
+          "custom": "⇧⌘P",
+          "default": "⇧⌘P"
+        },
+        "copyID": {
+          "custom": "",
+          "default": ""
+        },
+        "copyPlainText": {
+          "custom": "",
+          "default": ""
+        },
+        "copyProtocol": {
+          "custom": "⇧⌘H",
+          "default": "⇧⌘H"
+        },
+        "copyProtocolInMd": {
+          "custom": "",
+          "default": ""
+        },
+        "copyText": {
+          "custom": "",
+          "default": ""
+        },
+        "duplicate": {
+          "custom": "⌘D",
+          "default": "⌘D"
+        },
+        "duplicateCompletely": {
+          "custom": "",
+          "default": ""
+        },
+        "exitFocus": {
+          "custom": "",
+          "default": ""
+        },
+        "expand": {
+          "custom": "⌘↓",
+          "default": "⌘↓"
+        },
+        "expandDown": {
+          "custom": "⌥⇧↓",
+          "default": "⌥⇧↓"
+        },
+        "expandUp": {
+          "custom": "⌥⇧↑",
+          "default": "⌥⇧↑"
+        },
+        "fullscreen": {
+          "custom": "⌥Y",
+          "default": "⌥Y"
+        },
+        "graphView": {
+          "custom": "⌥G",
+          "default": "⌥G"
+        },
+        "hLayout": {
+          "custom": "",
+          "default": ""
+        },
+        "insertAfter": {
+          "custom": "⇧⌘A",
+          "default": "⇧⌘A"
+        },
+        "insertBefore": {
+          "custom": "⇧⌘B",
+          "default": "⇧⌘B"
+        },
+        "insertBottom": {
+          "custom": "⌥⌘.",
+          "default": "⌥⌘."
+        },
+        "insertRight": {
+          "custom": "⌥.",
+          "default": "⌥."
+        },
+        "jumpToParent": {
+          "custom": "⇧⌘J",
+          "default": "⇧⌘J"
+        },
+        "jumpToParentNext": {
+          "custom": "⇧⌘N",
+          "default": "⇧⌘N"
+        },
+        "jumpToParentPrev": {
+          "custom": "⇧⌘M",
+          "default": "⇧⌘M"
+        },
+        "ltr": {
+          "custom": "",
+          "default": ""
+        },
+        "moveToDown": {
+          "custom": "⇧⌘↓",
+          "default": "⇧⌘↓"
+        },
+        "moveToUp": {
+          "custom": "⇧⌘↑",
+          "default": "⇧⌘↑"
+        },
+        "netAssets2LocalAssets": {
+          "custom": "",
+          "default": ""
+        },
+        "netImg2LocalAsset": {
+          "custom": "",
+          "default": ""
+        },
+        "newContentFile": {
+          "custom": "F4",
+          "default": "F4"
+        },
+        "newNameFile": {
+          "custom": "F3",
+          "default": "F3"
+        },
+        "newNameSettingFile": {
+          "custom": "⌘F3",
+          "default": "⌘F3"
+        },
+        "openBy": {
+          "custom": "⌥,",
+          "default": "⌥,"
+        },
+        "openInNewTab": {
+          "custom": "",
+          "default": ""
+        },
+        "optimizeTypography": {
+          "custom": "",
+          "default": ""
+        },
+        "outline": {
+          "custom": "⌥O",
+          "default": "⌥O"
+        },
+        "preview": {
+          "custom": "⌥⌘9",
+          "default": "⌥⌘9"
+        },
+        "quickMakeCard": {
+          "custom": "⌥⌘F",
+          "default": "⌥⌘F"
+        },
+        "redo": {
+          "custom": "⌘Y",
+          "default": "⌘Y"
+        },
+        "refPopover": {
+          "custom": "",
+          "default": ""
+        },
+        "refTab": {
+          "custom": "⇧⌘.",
+          "default": "⇧⌘."
+        },
+        "refresh": {
+          "custom": "F5",
+          "default": "F5"
+        },
+        "rename": {
+          "custom": "F2",
+          "default": "F2"
+        },
+        "rtl": {
+          "custom": "",
+          "default": ""
+        },
+        "showInFolder": {
+          "custom": "⌥A",
+          "default": "⌥A"
+        },
+        "spaceRepetition": {
+          "custom": "⌥F",
+          "default": "⌥F"
+        },
+        "switchAdjust": {
+          "custom": "",
+          "default": ""
+        },
+        "switchReadonly": {
+          "custom": "",
+          "default": ""
+        },
+        "undo": {
+          "custom": "⌘Z",
+          "default": "⌘Z"
+        },
+        "vLayout": {
+          "custom": "",
+          "default": ""
+        },
+        "wysiwyg": {
+          "custom": "⌥⌘7",
+          "default": "⌥⌘7"
+        }
+      },
+      "heading": {
+        "heading1": {
+          "custom": "⌥⌘1",
+          "default": "⌥⌘1"
+        },
+        "heading2": {
+          "custom": "⌥⌘2",
+          "default": "⌥⌘2"
+        },
+        "heading3": {
+          "custom": "⌥⌘3",
+          "default": "⌥⌘3"
+        },
+        "heading4": {
+          "custom": "⌥⌘4",
+          "default": "⌥⌘4"
+        },
+        "heading5": {
+          "custom": "⌥⌘5",
+          "default": "⌥⌘5"
+        },
+        "heading6": {
+          "custom": "⌥⌘6",
+          "default": "⌥⌘6"
+        },
+        "paragraph": {
+          "custom": "⌥⌘0",
+          "default": "⌥⌘0"
+        }
+      },
+      "insert": {
+        "appearance": {
+          "custom": "⌥⌘X",
+          "default": "⌥⌘X"
+        },
+        "bold": {
+          "custom": "⌘B",
+          "default": "⌘B"
+        },
+        "check": {
+          "custom": "⌘L",
+          "default": "⌘L"
+        },
+        "clearInline": {
+          "custom": "⌘\\",
+          "default": "⌘\\"
+        },
+        "code": {
+          "custom": "⇧⌘K",
+          "default": "⇧⌘K"
+        },
+        "inline-code": {
+          "custom": "⌘G",
+          "default": "⌘G"
+        },
+        "inline-math": {
+          "custom": "⌘M",
+          "default": "⌘M"
+        },
+        "italic": {
+          "custom": "⌘I",
+          "default": "⌘I"
+        },
+        "kbd": {
+          "custom": "⌘'",
+          "default": "⌘'"
+        },
+        "lastUsed": {
+          "custom": "⌥X",
+          "default": "⌥X"
+        },
+        "link": {
+          "custom": "⌘K",
+          "default": "⌘K"
+        },
+        "list": {
+          "custom": "",
+          "default": ""
+        },
+        "mark": {
+          "custom": "⌥D",
+          "default": "⌥D"
+        },
+        "memo": {
+          "custom": "⌥⌘M",
+          "default": "⌥⌘M"
+        },
+        "ordered-list": {
+          "custom": "",
+          "default": ""
+        },
+        "quote": {
+          "custom": "",
+          "default": ""
+        },
+        "ref": {
+          "custom": "⌥[",
+          "default": "⌥["
+        },
+        "strike": {
+          "custom": "⇧⌘S",
+          "default": "⇧⌘S"
+        },
+        "sub": {
+          "custom": "⌘J",
+          "default": "⌘J"
+        },
+        "sup": {
+          "custom": "⌘H",
+          "default": "⌘H"
+        },
+        "table": {
+          "custom": "⌘O",
+          "default": "⌘O"
+        },
+        "tag": {
+          "custom": "⌘T",
+          "default": "⌘T"
+        },
+        "underline": {
+          "custom": "⌘U",
+          "default": "⌘U"
+        }
+      },
+      "list": {
+        "checkToggle": {
+          "custom": "⌘↩",
+          "default": "⌘↩"
+        },
+        "indent": {
+          "custom": "⇥",
+          "default": "⇥"
+        },
+        "outdent": {
+          "custom": "⇧⇥",
+          "default": "⇧⇥"
+        }
+      },
+      "table": {
+        "delete-column": {
+          "custom": "⇧⌘-",
+          "default": "⇧⌘-"
+        },
+        "delete-row": {
+          "custom": "⌘-",
+          "default": "⌘-"
+        },
+        "insertColumnLeft": {
+          "custom": "",
+          "default": ""
+        },
+        "insertColumnRight": {
+          "custom": "",
+          "default": ""
+        },
+        "insertRowAbove": {
+          "custom": "",
+          "default": ""
+        },
+        "insertRowBelow": {
+          "custom": "",
+          "default": ""
+        },
+        "moveToDown": {
+          "custom": "⌥⌘B",
+          "default": "⌥⌘B"
+        },
+        "moveToLeft": {
+          "custom": "⌥⌘L",
+          "default": "⌥⌘L"
+        },
+        "moveToRight": {
+          "custom": "⌥⌘R",
+          "default": "⌥⌘R"
+        },
+        "moveToUp": {
+          "custom": "⌥⌘T",
+          "default": "⌥⌘T"
+        }
+      }
+    },
+    "general": {
+      "addToDatabase": {
+        "custom": "",
+        "default": ""
+      },
+      "backlinks": {
+        "custom": "⌥7",
+        "default": "⌥7"
+      },
+      "bookmark": {
+        "custom": "⌥3",
+        "default": "⌥3"
+      },
+      "closeAll": {
+        "custom": "",
+        "default": ""
+      },
+      "closeLeft": {
+        "custom": "",
+        "default": ""
+      },
+      "closeOthers": {
+        "custom": "",
+        "default": ""
+      },
+      "closeRight": {
+        "custom": "",
+        "default": ""
+      },
+      "closeTab": {
+        "custom": "⌘W",
+        "default": "⌘W"
+      },
+      "closeUnmodified": {
+        "custom": "",
+        "default": ""
+      },
+      "commandPanel": {
+        "custom": "⌥⇧P",
+        "default": "⌥⇧P"
+      },
+      "config": {
+        "custom": "⌥P",
+        "default": "⌥P"
+      },
+      "dailyNote": {
+        "custom": "⌥5",
+        "default": "⌥5"
+      },
+      "dataHistory": {
+        "custom": "⌥H",
+        "default": "⌥H"
+      },
+      "editReadonly": {
+        "custom": "⇧⌘G",
+        "default": "⇧⌘G"
+      },
+      "enter": {
+        "custom": "⌥→",
+        "default": "⌥→"
+      },
+      "enterBack": {
+        "custom": "⌥←",
+        "default": "⌥←"
+      },
+      "fileTree": {
+        "custom": "⌥1",
+        "default": "⌥1"
+      },
+      "globalGraph": {
+        "custom": "⌥9",
+        "default": "⌥9"
+      },
+      "globalSearch": {
+        "custom": "⌘P",
+        "default": "⌘P"
+      },
+      "goBack": {
+        "custom": "⌘[",
+        "default": "⌘["
+      },
+      "goForward": {
+        "custom": "⌘]",
+        "default": "⌘]"
+      },
+      "goToEditTabNext": {
+        "custom": "⌃⇥",
+        "default": "⌃⇥"
+      },
+      "goToEditTabPrev": {
+        "custom": "⌃⇧⇥",
+        "default": "⌃⇧⇥"
+      },
+      "goToTab1": {
+        "custom": "⌘1",
+        "default": "⌘1"
+      },
+      "goToTab2": {
+        "custom": "⌘2",
+        "default": "⌘2"
+      },
+      "goToTab3": {
+        "custom": "⌘3",
+        "default": "⌘3"
+      },
+      "goToTab4": {
+        "custom": "⌘4",
+        "default": "⌘4"
+      },
+      "goToTab5": {
+        "custom": "⌘5",
+        "default": "⌘5"
+      },
+      "goToTab6": {
+        "custom": "⌘6",
+        "default": "⌘6"
+      },
+      "goToTab7": {
+        "custom": "⌘7",
+        "default": "⌘7"
+      },
+      "goToTab8": {
+        "custom": "⌘8",
+        "default": "⌘8"
+      },
+      "goToTab9": {
+        "custom": "⌘9",
+        "default": "⌘9"
+      },
+      "goToTabNext": {
+        "custom": "⇧⌘]",
+        "default": "⇧⌘]"
+      },
+      "goToTabPrev": {
+        "custom": "⇧⌘[",
+        "default": "⇧⌘["
+      },
+      "graphView": {
+        "custom": "⌥8",
+        "default": "⌥8"
+      },
+      "inbox": {
+        "custom": "⌥6",
+        "default": "⌥6"
+      },
+      "lockScreen": {
+        "custom": "⌥N",
+        "default": "⌥N"
+      },
+      "mainMenu": {
+        "custom": "⌥\\",
+        "default": "⌥\\"
+      },
+      "move": {
+        "custom": "",
+        "default": ""
+      },
+      "newFile": {
+        "custom": "⌘N",
+        "default": "⌘N"
+      },
+      "outline": {
+        "custom": "⌥2",
+        "default": "⌥2"
+      },
+      "recentClosed": {
+        "custom": "⇧⌘T",
+        "default": "⇧⌘T"
+      },
+      "recentDocs": {
+        "custom": "⌘E",
+        "default": "⌘E"
+      },
+      "replace": {
+        "custom": "⌘R",
+        "default": "⌘R"
+      },
+      "riffCard": {
+        "custom": "⌥0",
+        "default": "⌥0"
+      },
+      "search": {
+        "custom": "⌘F",
+        "default": "⌘F"
+      },
+      "selectOpen1": {
+        "custom": "",
+        "default": ""
+      },
+      "splitLR": {
+        "custom": "",
+        "default": ""
+      },
+      "splitMoveB": {
+        "custom": "",
+        "default": ""
+      },
+      "splitMoveR": {
+        "custom": "",
+        "default": ""
+      },
+      "splitTB": {
+        "custom": "",
+        "default": ""
+      },
+      "stickSearch": {
+        "custom": "⇧⌘F",
+        "default": "⇧⌘F"
+      },
+      "syncNow": {
+        "custom": "F9",
+        "default": "F9"
+      },
+      "tabToWindow": {
+        "custom": "",
+        "default": ""
+      },
+      "tag": {
+        "custom": "⌥4",
+        "default": "⌥4"
+      },
+      "toggleDock": {
+        "custom": "",
+        "default": ""
+      },
+      "toggleWin": {
+        "custom": "⌥M",
+        "default": "⌥M"
+      },
+      "unsplit": {
+        "custom": "",
+        "default": ""
+      },
+      "unsplitAll": {
+        "custom": "",
+        "default": ""
+      }
+    }
+  },
+  "sync": {
+    "cloudName": "main",
+    "enabled": false,
+    "perception": false,
+    "mode": 1,
+    "interval": 30,
+    "synced": 0,
+    "stat": "",
+    "generateConflictDoc": false,
+    "provider": 2,
+    "s3": {
+      "endpoint": "",
+      "accessKey": "",
+      "secretKey": "",
+      "bucket": "",
+      "region": "",
+      "pathStyle": true,
+      "skipTlsVerify": true,
+      "timeout": 60,
+      "concurrentReqs": 8
+    },
+    "webdav": {
+      "endpoint": "",
+      "username": "",
+      "password": "",
+      "skipTlsVerify": true,
+      "timeout": 60,
+      "concurrentReqs": 1
+    },
+    "local": {
+      "endpoint": "",
+      "timeout": 60,
+      "concurrentReqs": 16
+    }
+  },
+  "search": {
+    "document": true,
+    "heading": true,
+    "list": false,
+    "listItem": false,
+    "codeBlock": true,
+    "mathBlock": true,
+    "table": true,
+    "blockquote": false,
+    "superBlock": false,
+    "paragraph": true,
+    "htmlBlock": true,
+    "embedBlock": false,
+    "databaseBlock": true,
+    "audioBlock": false,
+    "videoBlock": false,
+    "iframeBlock": false,
+    "widgetBlock": false,
+    "callout": false,
+    "limit": 64,
+    "caseSensitive": false,
+    "name": true,
+    "alias": true,
+    "memo": true,
+    "ial": false,
+    "indexAssetPath": true,
+    "backlinkMentionName": true,
+    "backlinkMentionAlias": false,
+    "backlinkMentionAnchor": true,
+    "backlinkMentionDoc": true,
+    "backlinkMentionKeywordsLimit": 512,
+    "virtualRefName": true,
+    "virtualRefAlias": false,
+    "virtualRefAnchor": true,
+    "virtualRefDoc": true
+  },
+  "flashcard": {
+    "newCardLimit": 20,
+    "reviewCardLimit": 200,
+    "mark": true,
+    "list": true,
+    "superBlock": true,
+    "heading": true,
+    "deck": false,
+    "reviewMode": 0,
+    "requestRetention": 0.9,
+    "maximumInterval": 36500,
+    "weights": "0.40255, 1.18385, 3.173, 15.69105, 7.1949, 0.5345, 1.4604, 0.0046, 1.54575, 0.1192, 1.01925, 1.9395, 0.11, 0.29605, 2.2698, 0.2315, 2.9898, 0.51655, 0.6621"
+  },
+  "ai": {
+    "openAI": {
+      "apiKey": "",
+      "apiTimeout": 30,
+      "apiProxy": "",
+      "apiModel": "gpt-3.5-turbo",
+      "apiMaxTokens": 0,
+      "apiTemperature": 1,
+      "apiMaxContexts": 7,
+      "apiBaseURL": "https://api.openai.com/v1",
+      "apiUserAgent": "SiYuan/3.5.4 std/linux",
+      "apiProvider": "OpenAI",
+      "apiVersion": ""
+    }
+  },
+  "bazaar": {
+    "trust": true,
+    "petalDisabled": false
+  },
+  "stat": {
+    "treeCount": 7,
+    "cTreeCount": 100,
+    "blockCount": 1619,
+    "cBlockCount": 5000,
+    "dataSize": 635492215,
+    "cDataSize": 838860800,
+    "assetsSize": 451987469,
+    "cAssetsSize": 629145600
+  },
+  "api": {
+    "token": "7hds4km9g4ovo8zm"
+  },
+  "repo": {
+    "key": null,
+    "syncIndexTiming": 12000,
+    "indexRetentionDays": 180,
+    "retentionIndexesDaily": 2
+  },
+  "publish": {
+    "enable": true,
+    "port": 6808,
+    "auth": {
+      "enable": true,
+      "accounts": [
+        {
+          "username": "Ricardo",
+          "password": "123456",
+          "memo": ""
+        }
+      ]
+    }
+  },
+  "openHelp": false,
+  "showChangelog": false,
+  "cloudRegion": 0,
+  "snippet": {
+    "enabledCSS": true,
+    "enabledJS": true
+  },
+  "dataIndexState": 0,
+  "cookieKey": "xtvprsah8uoszy2w"
+}

@@ -1,0 +1,99 @@
+html {
+    & .protyle-wysiwyg [data-node-id] span[data-type~=tag] {
+        border: none;
+        color: var(--b3-theme-on-primary);
+        background-color: rgba(from var(--b3-theme-primary) r g b/0.25);
+        color: var(--b3-theme-on-primary) !important;
+        background-color: var(--b3-theme-primary);
+        transition: var(--b3-transition);
+        margin-left: 2px;
+        margin-right: 2px;
+        &:hover {
+            background-color: var(--b3-theme-primary);
+            filter: brightness(0.9);
+        }
+        &::before {
+            content: '';
+            display: inline-block;
+            padding-right: 0;
+            width: 0.4em;
+            height: 0.4em;
+            top: -0.08em;
+            border-radius: 50%;
+            background-color: currentColor;
+            margin-right: 0.4em;
+            position: relative;
+            vertical-align: middle;
+        }
+    }
+    & .protyle-background .b3-chips__doctag .b3-chip {
+        border: none;
+        color: var(--b3-theme-primary);
+        background-color: rgba(from var(--b3-theme-primary) r g b/0.25);
+        color: var(--b3-theme-on-primary) !important;
+        background-color: var(--b3-theme-primary);
+        transition: var(--b3-transition);
+        margin-left: 2px;
+        margin-right: 2px;
+        &:hover {
+            background-color: var(--b3-theme-success);
+            filter: brightness(0.9);
+        }
+        &::before {
+            content: '';
+            display: inline-block;
+            padding-right: 0;
+            width: 0.4em;
+            height: 0.4em;
+            top: -0.08em;
+            border-radius: 50%;
+            background-color: currentColor;
+            margin-right: 0.4em;
+            position: relative;
+            vertical-align: middle;
+        }
+    }
+}
+/* 实体多彩 */
+html {
+    & .protyle-wysiwyg [data-node-id] span[data-type~=tag] {
+        &:nth-of-type(6n+1) {
+            background-color: var(--tag-solid-colorful-1, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+2) {
+            background-color: var(--tag-solid-colorful-2, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+3) {
+            background-color: var(--tag-solid-colorful-3, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+4) {
+            background-color: var(--tag-solid-colorful-4, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+5) {
+            background-color: var(--tag-solid-colorful-5, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+6) {
+            background-color: var(--tag-solid-colorful-6, var(--b3-theme-primary));
+        }
+    }
+    & .protyle-background .b3-chips__doctag .b3-chip {
+        &:nth-of-type(6n+1) {
+            background-color: var(--tag-solid-colorful-1, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+2) {
+            background-color: var(--tag-solid-colorful-2, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+3) {
+            background-color: var(--tag-solid-colorful-3, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+4) {
+            background-color: var(--tag-solid-colorful-4, var(--b3-theme-primary));
+        }   
+        &:nth-of-type(6n+5) {
+            background-color: var(--tag-solid-colorful-5, var(--b3-theme-primary));
+        }
+        &:nth-of-type(6n+6) {
+            background-color: var(--tag-solid-colorful-6, var(--b3-theme-primary));
+        }
+    }
+}

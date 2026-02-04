@@ -1,0 +1,30 @@
+/* 圆角表格 */
+html {
+    & .protyle-wysiwyg [data-node-id].table table {
+        border-radius: 8px;
+        box-shadow: 0 0 0 1px var(--b3-theme-surface-lighter) inset;
+        overflow: hidden;
+        & thead th {
+            border-top: none;
+            &:first-child {
+                border-left: none;
+            }
+            &:last-child {
+                border-right: none;
+            }
+        }
+        & tbody tr {
+            & td:first-child {
+                border-left: none;
+            }
+            & td:last-child {
+                border-right: none;
+            }
+            &:last-child {
+                & td {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

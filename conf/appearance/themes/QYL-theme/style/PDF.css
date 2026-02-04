@@ -1,0 +1,30 @@
+:root[data-theme-mode=light] .pdf__outer#outerContainer:not(.pdf__outer--dark) .pdfViewer .textLayer {
+    background-color: var(--b3-theme-background);
+}
+:root[data-theme-mode=dark] .pdf__outer#outerContainer.pdf__outer--dark .pdfViewer .textLayer{
+    background-color: var(--b3-theme-background);
+}
+.pdf__outer#outerContainer.pdf__outer--dark .pdfViewer .textLayer {
+    --b3-pdf-background1: rgb(146, 77, 77);
+    --b3-pdf-background2: #9e6339;
+    --b3-pdf-background3: #9b7620;
+    --b3-pdf-background4: #548747;
+    --b3-pdf-background5: #4f8f89;
+    --b3-pdf-background6: #5e809f;
+    --b3-pdf-background7: #9864a5;
+}
+.textLayer .highlight.selected {
+    background-color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.01) calc(0.35 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.45);
+}
+#sidebarContainer {
+    background-color: var(--b3-theme-background);
+}
+#dialogContainer>.dialog {
+    padding: 16px;
+    & > div > span:first-child {
+        color: var(--b3-theme-on-background);
+        & + p {
+            color: var(--b3-theme-on-surface-light);
+        }
+    }
+}

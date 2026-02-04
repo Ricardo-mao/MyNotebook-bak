@@ -1,0 +1,626 @@
+/* 数据库 */
+.av__cell--header .av__celltext {
+    font-weight: bold;
+    font-size: 105%;
+}
+.av__views {
+    box-shadow: none;
+}
+.av__title {
+    margin-top: 5px;
+    margin-bottom: 18px;
+    padding-left: 7px;
+    color: var(--b3-theme-primary);
+}
+.av__cell .b3-chip {
+    border-radius: 6px;
+}
+.av__celltext--url.b3-chip {
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid var(--b3-theme-surface-lighter);
+    color: var(--b3-theme-on-surface);
+    &:hover {
+        background-color: var(--b3-theme-primary);
+        border: 1px solid var(--b3-theme-primary);
+        color: var(--b3-theme-on-primary);
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-color: currentColor;
+        -webkit-mask: url("data:image/svg+xml,%3Csvg t='1751732337384' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='1550' %3E%3Cpath d='M888.97 282.47L670.58 64.08c-7-7-16.5-10.94-26.4-10.94H259.02c-82.34 0-149.33 66.99-149.33 149.33V799.8c0 82.34 66.99 149.33 149.33 149.33h491.55c82.34 0 149.33-66.99 149.33-149.33V308.86c0.01-9.9-3.93-19.39-10.93-26.39z m-95.3 10.28H660.3V159.39l133.37 133.36z m-43.1 581.73H259.02c-41.17 0-74.67-33.49-74.67-74.67V202.48c0-41.18 33.5-74.67 74.67-74.67h326.61v202.27c0 20.62 16.72 37.33 37.33 37.33h202.28v432.4c0 41.18-33.5 74.67-74.67 74.67z' p-id='1551'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+        mask: url("data:image/svg+xml,%3Csvg t='1751732337384' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='1550' %3E%3Cpath d='M888.97 282.47L670.58 64.08c-7-7-16.5-10.94-26.4-10.94H259.02c-82.34 0-149.33 66.99-149.33 149.33V799.8c0 82.34 66.99 149.33 149.33 149.33h491.55c82.34 0 149.33-66.99 149.33-149.33V308.86c0.01-9.9-3.93-19.39-10.93-26.39z m-95.3 10.28H660.3V159.39l133.37 133.36z m-43.1 581.73H259.02c-41.17 0-74.67-33.49-74.67-74.67V202.48c0-41.18 33.5-74.67 74.67-74.67h326.61v202.27c0 20.62 16.72 37.33 37.33 37.33h202.28v432.4c0 41.18-33.5 74.67-74.67 74.67z' p-id='1551'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+        -webkit-mask-size: 1em;
+        mask-size: 1em;
+        vertical-align: -0.15em;
+        margin-right: 0.3em;
+    }
+}
+.av__celltext--url:not(.b3-chip) {
+    color: var(--b3-theme-primary);
+    transition: var(--b3-transition);
+    border-bottom: 1px solid currentColor;
+    &:hover {
+        background-color: var(--b3-theme-primary);
+        color: var(--b3-theme-on-primary);
+    }
+}
+.b3-menu__item:is([data-type="addColOptionOrCell"], [data-color]) {
+    background-color: transparent !important;
+    & .b3-menu__checked:hover {
+        background-color: var(--b3-list-hover);
+    }
+}
+.av__panel .b3-menu .b3-chips {
+    padding: 2px;
+    box-sizing: border-box;
+    & input {
+        box-shadow: 0 0 0 1px var(--QYL-tab-item-focus) inset;
+        background-color: var(--QYL-tab-item);
+        border: 0;
+        border-radius: var(--b3-border-radius);
+        padding: 4px 8px;
+        line-height: 20px;
+        box-sizing: border-box;
+        color: var(--b3-theme-on-background);
+        transition: box-shadow 120ms 0ms cubic-bezier(0, 0, 0.2, 1);
+        appearance: none;
+        -webkit-appearance: none;
+        font-variant-ligatures: none;
+        font-size: 14px;
+        margin: 4px;
+        &:hover {
+            box-shadow: 0 0 0 2px rgb(from var(--b3-theme-primary) r g b / 60%) inset;
+            background-color: var(--QYL-tab-item);
+        }
+        &:focus {
+            box-shadow: 0 0 0 2px rgb(from var(--b3-theme-primary) r g b / 60%) inset;
+            background-color: var(--QYL-tab-item);
+        }
+    }
+}
+.av__widthdrag {
+    width: 2px;
+    right: -1.5px;
+}
+/* 数据库页签 */
+.av__header .layout-tab-bar .item__graphic {
+    padding: 10px 0 10px 8px;
+    & .item__text {
+        padding-left: 8px;
+    }
+}
+/* 数据库被引主键 */
+.av__celltext--ref {
+    color: var(--b3-theme-on-surface);
+    transition: var(--b3-transition);
+    border-bottom: 1px solid currentColor;
+    &:hover {
+        background-color: var(--b3-theme-primary);
+        color: var(--b3-theme-on-primary);
+    }
+}
+/* 数据库chip颜色 */
+.custom-attr__avvalue .b3-chip[style*="color1)"], 
+.av__cell .b3-chip[style*="color1)"], 
+.av__panel .b3-chip[style*="color1)"], 
+[data-name="av-col-option"] .color__square[style*="color1)"], 
+.b3-menu__label .b3-chip[data-color="1"],
+.av__group-name .b3-chip[style*="color1)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(156, 21, 21) !important;
+    background-color: rgb(244, 183, 183) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main)) !important;
+    background-color: oklch(calc(0.8 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main) / 0.25) !important;
+    border: 1px solid oklch(calc(0.78 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color2)"], 
+.av__cell .b3-chip[style*="color2)"], 
+.av__panel .b3-chip[style*="color2)"], 
+[data-name="av-col-option"] .color__square[style*="color2)"], 
+.b3-menu__label .b3-chip[data-color="2"],
+.av__group-name .b3-chip[style*="color2)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(164, 83, 25) !important;
+    background-color: rgb(255, 218, 176) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 45deg)) !important;
+    background-color: oklch(calc(0.8 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 45deg) / 0.25) !important;
+    border: 1px solid oklch(calc(0.78 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 45deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color3)"], 
+.av__cell .b3-chip[style*="color3)"], 
+.av__panel .b3-chip[style*="color3)"], 
+[data-name="av-col-option"] .color__square[style*="color3)"], 
+.b3-menu__label .b3-chip[data-color="3"],
+.av__group-name .b3-chip[style*="color3)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(138, 132, 11) !important;
+    background-color: rgb(247, 247, 127) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 90deg)) !important;
+    background-color: oklch(calc(0.8 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 90deg) / 0.25) !important;
+    border: 1px solid oklch(calc(0.78 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 90deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color4)"], 
+.av__cell .b3-chip[style*="color4)"], 
+.av__panel .b3-chip[style*="color4)"], 
+[data-name="av-col-option"] .color__square[style*="color4)"], 
+.b3-menu__label .b3-chip[data-color="4"],
+.av__group-name .b3-chip[style*="color4)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(47, 131, 34) !important;
+    background-color: rgb(195, 241, 198) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 135deg)) !important;
+    background-color: oklch(calc(0.8 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 135deg) / 0.25) !important;
+    border: 1px solid oklch(calc(0.78 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 135deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color5)"], 
+.av__cell .b3-chip[style*="color5)"], 
+.av__panel .b3-chip[style*="color5)"], 
+[data-name="av-col-option"] .color__square[style*="color5)"], 
+.b3-menu__label .b3-chip[data-color="5"],
+.av__group-name .b3-chip[style*="color5)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(18, 120, 110) !important;
+    background-color: rgb(150, 239, 230) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg)) !important;
+    background-color: oklch(calc(0.8 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.25) !important;
+    border: 1px solid oklch(calc(0.78 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color6)"], 
+.av__cell .b3-chip[style*="color6)"], 
+.av__panel .b3-chip[style*="color6)"], 
+[data-name="av-col-option"] .color__square[style*="color6)"], 
+.b3-menu__label .b3-chip[data-color="6"],
+.av__group-name .b3-chip[style*="color6)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(29, 95, 135) !important;
+    background-color: rgb(181, 222, 255) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 225deg)) !important;
+    background-color: oklch(calc(0.8 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 225deg) / 0.25) !important;
+    border: 1px solid oklch(calc(0.78 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 225deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color7)"], 
+.av__cell .b3-chip[style*="color7)"], 
+.av__panel .b3-chip[style*="color7)"], 
+[data-name="av-col-option"] .color__square[style*="color7)"], 
+.b3-menu__label .b3-chip[data-color="7"],
+.av__group-name .b3-chip[style*="color7)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(65, 38, 137) !important;
+    background-color: rgb(208, 201, 255) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg)) !important;
+    background-color: oklch(calc(0.8 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg) / 0.25) !important;
+    border: 1px solid oklch(calc(0.78 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color8)"], 
+.av__cell .b3-chip[style*="color8)"], 
+.av__panel .b3-chip[style*="color8)"], 
+[data-name="av-col-option"] .color__square[style*="color8)"], 
+.b3-menu__label .b3-chip[data-color="8"],
+.av__group-name .b3-chip[style*="color8)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(120, 36, 134) !important;
+    background-color: rgb(246, 200, 255) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 315deg)) !important;
+    background-color: oklch(calc(0.8 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 315deg) / 0.25) !important;
+    border: 1px solid oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 315deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color9)"], 
+.av__cell .b3-chip[style*="color9)"], 
+.av__panel .b3-chip[style*="color9)"], 
+[data-name="av-col-option"] .color__square[style*="color9)"], 
+.b3-menu__label .b3-chip[data-color="9"],
+.av__group-name .b3-chip[style*="color9)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgb(247, 144, 144) !important;
+    color: oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.015) calc(0.35 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 60deg)) !important;
+    background-color: oklch(calc(0.5 + var(--b3-theme-primary-brightness) * 0.015) calc(0.52 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 60deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 60deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color10)"], 
+.av__cell .b3-chip[style*="color10)"], 
+.av__panel .b3-chip[style*="color10)"], 
+[data-name="av-col-option"] .color__square[style*="color10)"], 
+.b3-menu__label .b3-chip[data-color="10"],
+.av__group-name .b3-chip[style*="color10)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgb(241, 151, 115) !important;
+    color: oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.015) calc(0.35 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 120deg)) !important;
+    background-color: oklch(calc(0.5 + var(--b3-theme-primary-brightness) * 0.015) calc(0.52 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 120deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 120deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color11)"], 
+.av__cell .b3-chip[style*="color11)"], 
+.av__panel .b3-chip[style*="color11)"], 
+[data-name="av-col-option"] .color__square[style*="color11)"], 
+.b3-menu__label .b3-chip[data-color="11"],
+.av__group-name .b3-chip[style*="color11)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgb(136, 216, 120) !important;
+    color: oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.015) calc(0.35 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg)) !important;
+    background-color: oklch(calc(0.5 + var(--b3-theme-primary-brightness) * 0.015) calc(0.52 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color12)"], 
+.av__cell .b3-chip[style*="color12)"], 
+.av__panel .b3-chip[style*="color12)"], 
+[data-name="av-col-option"] .color__square[style*="color12)"], 
+.b3-menu__label .b3-chip[data-color="12"],
+.av__group-name .b3-chip[style*="color12)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgb(120, 172, 228) !important;
+    color: oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.015) calc(0.35 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 240deg)) !important;
+    background-color: oklch(calc(0.5 + var(--b3-theme-primary-brightness) * 0.015) calc(0.52 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 240deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 240deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color13)"], 
+.av__cell .b3-chip[style*="color13)"], 
+.av__panel .b3-chip[style*="color13)"], 
+[data-name="av-col-option"] .color__square[style*="color13)"], 
+.b3-menu__label .b3-chip[data-color="13"],
+.av__group-name .b3-chip[style*="color13)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgb(205, 146, 235) !important;
+    color: oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.015) calc(0.35 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg)) !important;
+    background-color: oklch(calc(0.5 + var(--b3-theme-primary-brightness) * 0.015) calc(0.52 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg) / 0.65);
+}
+.custom-attr__avvalue .b3-chip[style*="color14)"], 
+.av__cell .b3-chip[style*="color14)"], 
+.av__panel .b3-chip[style*="color14)"], 
+[data-name="av-col-option"] .color__square[style*="color14)"], 
+.b3-menu__label .b3-chip[data-color="14"],
+.av__group-name .b3-chip[style*="color14)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgb(77, 77, 77) !important;
+    color: oklch(calc(0.55 + var(--b3-theme-primary-brightness) * 0.015) calc(0.05 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 300deg)) !important;
+    background-color: oklch(calc(0.5 + var(--b3-theme-primary-brightness) * 0.015) calc(0.02 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 300deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.82 + var(--b3-theme-primary-brightness) * 0.015) calc(0.02 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 300deg) / 0.65);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color1)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color1)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color1)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color1)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="1"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color1)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgba(205, 63, 63, 0.5) !important;
+    color: oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main) / 0.25) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color2)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color2)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color2)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color2)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="2"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color2)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgba(225, 137, 74, 0.5) !important;
+    color: oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 45deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 45deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 45deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color3)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color3)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color3)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color3)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="3"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color3)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgba(189, 189, 34, 0.55) !important;
+    color: oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 90deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 90deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 90deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color4)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color4)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color4)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color4)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="4"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color4)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgba(77, 227, 69, 0.5) !important;
+    color: oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 135deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 135deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 135deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color5)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color5)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color5)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color5)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="5"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color5)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgba(69, 222, 207, 0.5) !important;
+    color: oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color6)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color6)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color6)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color6)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="6"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color6)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgba(70, 140, 198, 0.5) !important;
+    color: oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 225deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 225deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 225deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color7)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color7)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color7)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color7)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="7"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color7)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgba(138, 101, 224, 0.5) !important;
+    color: oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color8)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color8)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color8)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color8)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="8"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color8)"] {
+    --b3-theme-primary-main: 173deg;
+    color: var(--b3-theme-on-primary) !important;
+    background-color: rgba(207, 108, 210, 0.5) !important;
+    color: oklch(calc(0.75 + var(--b3-theme-primary-brightness) * 0.015) calc(0.18 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 315deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.45 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 315deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 315deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color9)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color9)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color9)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color9)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="9"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color9)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(180, 73, 73) !important;
+    background-color: rgba(210, 76, 76, 0.3) !important;
+    color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.015) calc(0.25 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 60deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 60deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 60deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color10)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color10)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color10)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color10)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="10"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color10)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(218, 116, 73) !important;
+    background-color: rgba(215, 101, 56, 0.3) !important;
+    color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.015) calc(0.25 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 120deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 120deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 120deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color11)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color11)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color11)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color11)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="11"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color11)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(79, 179, 79) !important;
+    background-color: rgba(53, 216, 53, 0.3) !important;
+    color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.015) calc(0.25 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 180deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color12)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color12)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color12)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color12)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="12"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color12)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(93, 133, 218) !important;
+    background-color: rgba(51, 87, 207, 0.3) !important;
+    color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.015) calc(0.25 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 240deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 240deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 240deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color13)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color13)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color13)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color13)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="13"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color13)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(142, 87, 174) !important;
+    background-color: rgba(177, 96, 217, 0.3) !important;
+    color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.015) calc(0.25 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg)) !important;
+    background-color: oklch(calc(0.6 + var(--b3-theme-primary-brightness) * 0.015) calc(0.42 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.15 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 270deg) / 0.4);
+}
+[data-theme-mode="dark"] .custom-attr__avvalue .b3-chip[style*="color14)"], 
+[data-theme-mode="dark"] .av__cell .b3-chip[style*="color14)"], 
+[data-theme-mode="dark"] .av__panel .b3-chip[style*="color14)"], 
+[data-theme-mode="dark"] [data-name="av-col-option"] .color__square[style*="color14)"], 
+[data-theme-mode="dark"] .b3-menu__label .b3-chip[data-color="14"],
+[data-theme-mode="dark"] .av__group-name .b3-chip[style*="color14)"] {
+    --b3-theme-primary-main: 173deg;
+    color: rgb(35, 35, 35) !important;
+    background-color: rgba(177, 96, 217, 0.3) !important;
+    color: oklch(calc(0.65 + var(--b3-theme-primary-brightness) * 0.015) calc(0.02 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 300deg)) !important;
+    background-color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.015) calc(0.01 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 300deg) / 0.15) !important;
+    border: 1px solid oklch(calc(0.62 + var(--b3-theme-primary-brightness) * 0.015) calc(0.01 * max(0.2, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 300deg) / 0.4);
+}
+/* 细节修复 */
+.av__views > [data-type="av-search-icon"] + div > input:is([style*="width: 0"], [style*="width:0"]) {
+    opacity: 0;
+}
+.av__mask .b3-text-field, .av__mask select.b3-select {
+    background-color: var(--b3-theme-surface);
+    &:is(:hover, :focus) {
+        background-color: var(--b3-theme-surface)
+    }
+}
+.b3-chip--info {
+    outline: 1px solid var(--b3-theme-surface-lighter);
+    background-color: var(--b3-theme-background);
+    color: var(--b3-theme-on-background);
+    &:hover {
+        background-color: var(--b3-theme-primary);
+        color: var(--b3-theme-on-primary);
+    }
+}
+.av__row--util .b3-button {
+    border-radius: 12px;
+    color: var(--b3-theme-on-surface-light);
+    border-color: var(--b3-theme-surface-lighter);
+    &:hover {
+        border-color: var(--b3-theme-primary);
+        background-color: var(--b3-theme-primary);
+        color: var(--b3-theme-on-primary);
+    }
+}
+/* 画廊 */
+.av__gallery-item, .av__gallery-add {
+    border: 0.5px solid var(--b3-theme-surface-lighter);
+    border-radius: var(--b3-border-radius-b);
+    transition: var(--b3-transition);
+    box-shadow: 0px 3px 6px -2px var(--b3-shadow-main);
+}
+.av__gallery-item:hover {
+    transform: scale(1.03);
+    & .av__gallery-fields {
+        background-color: transparent;
+    }
+}
+.av__gallery-cover {
+    border-radius: var(--b3-border-radius-b) var(--b3-border-radius-b) 0 0;
+    border-bottom: none;
+    background: linear-gradient(to bottom, var(--b3-theme-surface) 0%, var(--b3-theme-background) 100%);
+}
+.av__gallery-fields {
+    padding: 6px 12px;
+    border-radius: 0 0 var(--b3-border-radius-b) var(--b3-border-radius-b);
+    & .av__cell.ariaLabel:first-child {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: var(--b3-theme-on-surface);
+        & .b3-menu__avemoji {
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            padding-bottom: 0.2em;
+            & + .av__celltext--ref {
+                border-bottom: none;
+                padding-left: 1.8em;
+            }
+        }
+    }
+}
+.av__gallery .av__cell[data-dtype="checkbox"] {
+    &::before {
+        -webkit-mask-position: -1px center;
+        mask-position: -1px center;  
+    }
+    & > .fn__flex {
+        color: transparent;
+    }
+}
+.av__gallery-item {
+    container-type: inline-size;
+    container-name: gallery-item;
+}
+@container gallery-item (min-width: 300px) {
+    .av__gallery-field.av__gallery-field--name {
+        display: flex;
+        flex-direction: row;
+        & .av__gallery-name {
+            flex-shrink: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 68px;
+            max-width: 68px;
+        }
+        & .av__cell {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: calc(100% - 68px);
+            max-width: calc(100% - 68px);
+        }
+    }
+}
+/* 分组 */
+.av__group-icon[data-type="av-group-fold"]:not(:has(.av__group-arrow--open)) {
+    color: var(--b3-theme-primary);
+    color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.2, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main));
+    background-color: var(--QYL-tab-item-focus);
+}
+.av__group-counter {
+    margin-left: 4px;
+    line-height: 22px;
+    padding: 0 8px;
+    color: var(--b3-theme-on-surface-light);
+    border-radius: var(--b3-border-radius);
+    font-size: 12px;
+    user-select: none;
+    height: 22px;
+    background-color: var(--b3-theme-surface);
+}
+.av__group-title:nth-last-child(2) {
+    & .av__group-name {
+        color: var(--b3-theme-primary);
+    }
+}
+/* 数据库属性 */
+.custom-attr .b3-text-field--text {
+    box-shadow: 0 0 0 1px var(--QYL-tab-item-focus) inset;
+    background-color: var(--QYL-tab-item);
+    &:hover, :focus {
+        box-shadow: 0 0 0 2px rgb(from var(--b3-theme-primary) r g b / 60%) inset;
+        background-color: var(--QYL-tab-item);
+    }
+}
+.custom-attr__avvalue:not(.custom-attr__avvalue--readonly):hover, .custom-attr__avvalue--active {
+    background-color: var(--b3-list-hover);
+}
+.custom-attr .b3-button[data-type=addColumn] {
+    border-radius: 12px;
+    color: var(--b3-theme-on-surface-light);
+    border-color: var(--b3-theme-surface-lighter);
+    &:hover {
+        border-color: var(--b3-theme-primary);
+        background-color: var(--b3-theme-primary);
+        color: var(--b3-theme-on-primary);
+    }
+}
+/* 看板 */
+.av__kanban {
+    .av__gallery-actions {
+        top: 8px;
+    }
+    .av__gallery-fields [data-type="block-more"] {
+        right: 48px;
+    }
+    .av__gallery-item:hover:not(.av__gallery-item--select)::before {
+        background-color: var(--b3-theme-background);
+    }
+}

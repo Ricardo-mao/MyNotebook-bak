@@ -1,0 +1,39 @@
+:is(.backlinkList, .backlinkMList) {
+    & > .b3-list--background {
+        & .b3-list-item {
+            background-color: var(--b3-list-hover);
+            & + .protyle {
+                & .protyle-wysiwyg {
+                    & > [data-node-id] {
+                        font-size: 0.85em;
+                    }
+                    & .protyle-breadcrumb__bar {
+                        font-size: 0.85em;
+                        min-height: 24px;
+                        height: 24px;
+                        opacity: 0.8;
+                        &[style] {
+                            max-height: 2px;
+                        }
+                        & .protyle-breadcrumb__item {
+                            margin: 0;
+                        }
+                        & + [data-node-id] {
+                            margin-top: 0;
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.QYLColorBlock .layout__dockl :is(.backlinkList, .backlinkMList) {
+    & > .b3-list--background {
+        & .b3-list-item {   
+            & + .protyle {
+                background-color: var(--b3-theme-surface);
+            }
+        }
+    }
+}

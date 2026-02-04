@@ -1,0 +1,491 @@
+/* svg 数据 URI */
+:root {
+    --QYL-svg-quote: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNzM4OTg0MDc3MTg4IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjU2NzIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxwYXRoIGQ9Ik01NzYgNTc2YzAtMTA2LjgxNiAzMy4wMjQtMjE1LjIzMiAxMjgtMzIwIDM3LjA1Ni01MS45MDQgMTI5Ljc5Mi0xMDMuNDI0IDI1Ni0xMjh2MTI4Yy0xOTIgNzguNTI4LTIzMy4yOCAyNDQuMTYtMjEwLjExMiAyNTZIODk2YTY0IDY0IDAgMCAxIDY0IDY0djI1NmE2NCA2NCAwIDAgMS02NCA2NGgtMjU2YTY0IDY0IDAgMCAxLTY0LTY0VjU3NnpNNjQgNTc2YzAtMTA2LjgxNiAzMy4wMjQtMjE1LjIzMiAxMjgtMzIwIDM3LjA1Ni01MS45MDQgMTI5Ljc5Mi0xMDMuNDI0IDI1Ni0xMjh2MTI4QzI1NiAzMzQuNTI4IDIxNC43MiA1MDAuMTYgMjM3Ljg4OCA1MTJIMzg0YTY0IDY0IDAgMCAxIDY0IDY0djI1NmE2NCA2NCAwIDAgMS02NCA2NEgxMjhhNjQgNjQgMCAwIDEtNjQtNjRWNTc2eiIgZmlsbD0iI2NkY2RjZCIgcC1pZD0iNTY3MyI+PC9wYXRoPjwvc3ZnPg==");
+    --QYL-svg-uncheck: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNzUxNDU3NjgzMDg5IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEyOTgiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjMiIGhlaWdodD0iMjMiPjxwYXRoIGQ9Ik03MzUuNzg2ODMzIDYyLjk4ODU5IDI4OC4zMTAzODIgNjIuOTg4NTljLTEyMy41NjcyOTMgMC0yMjMuNzM4NzM3IDEwMC4xNjQyODEtMjIzLjczODczNyAyMjMuNzM4NzM3bDAgNDQ3LjQ3NjQ1MWMwIDEyMy41NTUwMTQgMTAwLjE3MDQyIDIyMy43NTEwMTcgMjIzLjczODczNyAyMjMuNzUxMDE3bDQ0Ny40NzY0NTEgMGMxMjMuNTYxMTU0IDAgMjIzLjczODczNy0xMDAuMTk2MDAzIDIyMy43Mzg3MzctMjIzLjc1MTAxN0w5NTkuNTI1NTcgMjg2LjcyNzMyN0M5NTkuNTI1NTcgMTYzLjE1Mjg3IDg1OS4zNDc5ODYgNjIuOTg4NTkgNzM1Ljc4NjgzMyA2Mi45ODg1OXpNODMxLjY5NDE1OSA3MDIuMjYwMjUyYzAgNzAuNjEyMjIxLTU3LjIzODYzMiAxMjcuODUwODUzLTEyNy44NTA4NTMgMTI3Ljg1MDg1M0wzMjAuMjkyNzkzIDgzMC4xMTExMDVjLTcwLjYxMjIyMSAwLTEyNy44NTA4NTMtNTcuMjM4NjMyLTEyNy44NTA4NTMtMTI3Ljg1MDg1M0wxOTIuNDQxOTQgMzE4LjcwODcxNWMwLTcwLjYxMjIyMSA1Ny4yMzg2MzItMTI3Ljg1MDg1MyAxMjcuODUwODUzLTEyNy44NTA4NTNsMzgzLjU1MTUzNiAwYzcwLjYxMjIyMSAwIDEyNy44NTA4NTMgNTcuMjM4NjMyIDEyNy44NTA4NTMgMTI3Ljg1MDg1M0w4MzEuNjk1MTgzIDcwMi4yNjAyNTJ6IiBmaWxsPSIjREREREREIiBwLWlkPSIxMjk5Ij48L3BhdGg+PC9zdmc+");
+    --QYL-svg-checked: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNzUxNDU3Njg3Njg3IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE0NjAiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjMiIGhlaWdodD0iMjMiPjxwYXRoIGQ9Ik03MzEuNjgyMzUxIDYwLjE4OTg0N2wtNDQ0LjI4ODg1MiAwYy0xMjIuNjg3MjUgMC0yMjIuMTQ0NDI2IDk5LjQ1MTAzNi0yMjIuMTQ0NDI2IDIyMi4xNDQ0MjZsMCA0NDQuMjg4ODUyYzAgMTIyLjY3NDk3IDk5LjQ1NzE3NiAyMjIuMTU2NzA2IDIyMi4xNDQ0MjYgMjIyLjE1NjcwNmw0NDQuMjg4ODUyIDBjMTIyLjY4MTExIDAgMjIyLjE0NDQyNi05OS40ODI3NTkgMjIyLjE0NDQyNi0yMjIuMTU2NzA2bDAtNDQ0LjI4ODg1MkM5NTMuODI2Nzc3IDE1OS42NDA4ODMgODU0LjM2MzQ2MiA2MC4xODk4NDcgNzMxLjY4MjM1MSA2MC4xODk4NDd6TTUzMi4xMzc2NDMgNjE4LjY4NTgxMWwwLjAwMjA0NyAwLjAwMjA0Ny03Ny4xMDkxOTIgNzYuMjUyNjg1LTc3LjEwOTE5Mi03Ni4yNTI2ODUgMC4wMDEwMjMtMC4wMDEwMjNMMjU1LjYzOTI4NSA0OTcuNzU3NjI0bDc3LjExNjM1NS03Ni4yNTg4MjUgMTIyLjI3NTg4MSAxMjAuOTI5MjFMNjg2LjM1ODA3MyAzMTMuNjU2NjUzbDc3LjEwOTE5MiA3Ni4yNTg4MjVMNTMyLjEzNzY0MyA2MTguNjg1ODExeiIgZmlsbD0iIzYzNjM2MyIgcC1pZD0iMTQ2MSI+PC9wYXRoPjwvc3ZnPg==");
+    --QYL-svg-resize: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNzQ5OTU2MTMxNDQwIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjUwNzcwIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjIzIiBoZWlnaHQ9IjIzIj48cGF0aCBkPSJNNzM5LjU1NTU1NiAyNDEuNzc3Nzc4YTQyLjY2NjY2NyA0Mi42NjY2NjcgMCAwIDEgNDIuMjY4NDQ0IDM2Ljg2NEw3ODIuMjIyMjIyIDI4NC40NDQ0NDR2MzQxLjMzMzMzNGExNTYuNDQ0NDQ0IDE1Ni40NDQ0NDQgMCAwIDEtMTQ2Ljg4NzExMSAxNTYuMTZMNjI1Ljc3Nzc3OCA3ODIuMjIyMjIySDI4NC40NDQ0NDRhNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDAgMS01LjgwMjY2Ni04NC45MzUxMTFMMjg0LjQ0NDQ0NCA2OTYuODg4ODg5aDM0MS4zMzMzMzRhNzEuMTExMTExIDcxLjExMTExMSAwIDAgMCA3MC43Njk3NzgtNjMuODI5MzMzTDY5Ni44ODg4ODkgNjI1Ljc3Nzc3OFYyODQuNDQ0NDQ0YTQyLjY2NjY2NyA0Mi42NjY2NjcgMCAwIDEgNDIuNjY2NjY3LTQyLjY2NjY2NnoiIHAtaWQ9IjUwNzcxIj48L3BhdGg+PC9zdmc+");
+}
+
+/* 引述块 */
+.protyle-wysiwyg blockquote, .protyle-wysiwyg .bq {
+    background-color: var(--QYL-blockquote-background);
+    color: var(--QYL-blockquote);
+    padding-top: 22px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 50px;
+        height: 50px;
+        -webkit-mask-image: var(--QYL-svg-quote);
+        -webkit-mask-repeat: no-repeat;
+        mask-image: var(--QYL-svg-quote);
+        mask-repeat: no-repeat;
+        background-color: var(--QYL-blockquote-svg);
+        background-size: 20px 20px;
+        pointer-events: none;
+    }
+    & :is(blockquote, .bq) {
+        padding: 4px 4px 4px 10px;
+        border-radius: 0;
+        border-left: 5px solid var(--QYL-blockquote-svg);
+        &::before {
+            display: none;
+        }
+    }
+}
+/* 分割线 */
+.protyle-wysiwyg [data-node-id].hr>div::after {
+    height: 2px;
+    background-color: var(--b3-theme-primary);
+}
+/* 块标 */
+.protyle-gutters {
+    transition: top 0.2s, left 0.2s;
+}
+.protyle-gutters button {
+    transition: scale 0.5s cubic-bezier(0.25, 0.46, 0.15, 1.8);
+    transform-origin: right center;
+    &:hover {
+        scale: 1.2;
+        & svg {
+            color: var(--b3-theme-primary); 
+        }
+    }
+}
+.protyle-title__icon {
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.15, 1.8);
+    &:hover {
+        transform: scale(1.2);
+        color: var(--b3-theme-primary); 
+    }
+}
+/* 表格 */
+.b3-typography table td, .b3-typography table th, .protyle-wysiwyg table td, .protyle-wysiwyg table th, .b3-typography table tr:nth-child(even) td, .protyle-wysiwyg table tr:nth-child(even) td {
+    border: 1px solid var(--b3-theme-surface-lighter);
+    background-color: rgba(255, 0, 0, 0);
+}
+.b3-typography table thead th, .b3-typography table thead td, .protyle-wysiwyg table thead th, .protyle-wysiwyg table thead td {
+    font-weight: unset;
+}
+.protyle-wysiwyg [data-node-id].table[custom-pinthead=true] thead {
+    box-shadow: unset;
+    background-color: unset;
+}
+/* 行级代码 */
+:is(.fn__code, .b3-typography code, .b3-typography span[data-type~=code], .protyle-wysiwyg code, .protyle-wysiwyg span[data-type~=code]) {
+    border-radius: 6px;
+    color: var(--QYL-inline-code);
+}
+/* 标签 */
+.protyle-wysiwyg [data-node-id] span[data-type~=tag] {
+    border-radius: 12px;
+    border: none;
+    color: var(--b3-theme-primary);
+    background-color: rgba(from var(--b3-theme-primary) r g b/0.25);
+    padding: 2px 8px;
+    font-size: 0.9em;
+    transition: var(--b3-transition);
+    margin-left: 2px;
+    margin-right: 2px;
+    &:hover {
+        filter: brightness(0.85);
+        background-color: rgba(from var(--b3-theme-primary) r g b/0.25);
+    }
+    &::before {
+        content: '#';
+        padding-right: 0.2em;
+    }
+}
+/* 标签多彩 */
+.protyle-wysiwyg [data-node-id] span[data-type~=tag] {
+    &:nth-of-type(6n+1) {
+        color: var(--tag-colorful-color-1, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-1, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+2) {
+        color: var(--tag-colorful-color-2, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-2, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+3) {
+        color: var(--tag-colorful-color-3, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-3, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+4) {
+        color: var(--tag-colorful-color-4, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-4, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+5) {
+        color: var(--tag-colorful-color-5, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-5, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+6) {
+        color: var(--tag-colorful-color-6, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-6, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+}
+/* 文档标签 */
+.protyle-background .b3-chips__doctag .b3-chip {
+    border-radius: 12px;
+    border: none !important;
+    outline: none !important;
+    color: var(--b3-theme-primary);
+    background-color: rgba(from var(--b3-theme-primary) r g b/0.25);
+    padding: 2px 8px;
+    font-size: 1em;
+    line-height: 16px;
+    transition: var(--b3-transition);
+    margin-left: 2px;
+    margin-right: 2px;
+    &:hover {
+        filter: brightness(0.85);
+        background-color: rgba(from var(--b3-theme-primary) r g b/0.25);
+        & .b3-chip__close {
+            opacity: 1;
+            margin-right: 0;
+        }
+    }
+    &::before {
+        content: '#';
+        padding-right: 0.2em;
+    }
+    & .b3-chip__close {
+        width: 16px;
+        margin-right: -18px;
+        opacity: 0;
+    }
+}
+/* 文档标签多彩 */
+.protyle-background .b3-chips__doctag .b3-chip {
+    &:nth-of-type(6n+1) {
+        color: var(--tag-colorful-color-1, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-1, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+2) {
+        color: var(--tag-colorful-color-2, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-2, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+3) {
+        color: var(--tag-colorful-color-3, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-3, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+4) {
+        color: var(--tag-colorful-color-4, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-4, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+5) {
+        color: var(--tag-colorful-color-5, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-5, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+    &:nth-of-type(6n+6) {
+        color: var(--tag-colorful-color-6, var(--b3-theme-primary));
+        background-color: var(--tag-colorful-background-6, rgba(from var(--b3-theme-primary) r g b/0.25));
+    }
+}
+/* 键盘元素 */
+.b3-typography kbd, .b3-typography span[data-type~=kbd], .protyle-wysiwyg kbd, .protyle-wysiwyg span[data-type~=kbd] {
+    border-radius: 6px;
+    background-color: var(--b3-theme-background);
+    border: solid 1px var(--b3-theme-surface-lighter);
+    box-shadow: inset 0 -2px 0 var(--b3-theme-surface-lighter);
+    position: relative;
+    bottom: 1px;
+}
+.fn__kbd {
+    border-radius: 6px;
+    background-color: var(--b3-theme-background);
+    border: solid 1px var(--b3-theme-surface-lighter);
+    box-shadow: inset 0 -2px 0 var(--b3-theme-surface-lighter);
+    position: relative;
+    bottom: -1px;
+}
+/* 嵌入块 */
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
+    box-shadow: var(--b3-embed-shadow);
+    border: 1px solid var(--b3-theme-surface-lighter);
+}
+/* 行级备注 */
+.b3-typography span[data-type~=inline-memo], .protyle-wysiwyg span[data-type~=inline-memo] {
+    background-color: var(--QYL-tab-item-focus);
+    border-bottom: 2px solid var(--b3-theme-primary);
+    padding-bottom: 1.5px;
+}
+.tooltip.tooltip--memo {
+    font-size: 14px;
+    line-height: 20px;
+}
+/* 块属性 */
+.protyle-wysiwyg--attr .b3-tooltips::after {
+    font-size: 14px;
+    line-height: 20px;
+}
+/* 行内文字背景 */
+:is(span[data-type*="text"], span[data-type*="strong"])[style*="background-color: var(--b3-font-background"],
+:is(span[data-type*="text"], span[data-type*="strong"])[style*="background-color: var(--b3-card-error-background)"],
+:is(span[data-type*="text"], span[data-type*="strong"])[style*="background-color: var(--b3-card-warning-background)"],
+:is(span[data-type*="text"], span[data-type*="strong"])[style*="background-color: var(--b3-card-info-background)"],
+:is(span[data-type*="text"], span[data-type*="strong"])[style*="background-color: var(--b3-card-success-background)"] {
+    border-radius: 4px;
+    padding: 0em 0.05em;
+}
+/* 任务列表复选框样式 */
+.protyle-wysiwyg .li[data-subtype="t"] > .protyle-action--task svg {
+    opacity: 0;
+}
+.av__cell-uncheck svg {
+    opacity: 0;
+}
+.av__cell-check svg {
+    opacity: 0;
+}
+.protyle-wysiwyg .li[data-subtype=t] .protyle-action--task::before, .av__cell-uncheck::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background: var(--b3-theme-primary);
+    background-image: linear-gradient(to right bottom, 
+    var(--b3-theme-primary),
+    var(--b3-theme-primary),
+    oklch(calc(0.68 + var(--b3-theme-primary-brightness) * 0.02) calc(0.30 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 5deg)),
+    oklch(calc(0.68 + var(--b3-theme-primary-brightness) * 0.02) calc(0.30 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 30deg)));
+    -webkit-mask-image: var(--QYL-svg-uncheck);
+    -webkit-mask-size: 18px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-image: var(--QYL-svg-uncheck);
+    mask-size: 18px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+.av__row:not(.av__row--select,.av__row--header) .av__colsticky .av__firstcol {
+    & svg {
+        opacity: 0;
+    }
+    &::before {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        top: 0.55em;
+        left: 0.2em;
+        width: 18px;
+        height: 18px;
+        background: var(--b3-theme-primary);
+        background-image: linear-gradient(to right bottom, 
+        var(--b3-theme-primary),
+        var(--b3-theme-primary),
+        oklch(calc(0.68 + var(--b3-theme-primary-brightness) * 0.02) calc(0.30 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 5deg)),
+        oklch(calc(0.68 + var(--b3-theme-primary-brightness) * 0.02) calc(0.30 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 30deg)));
+        -webkit-mask-image: var(--QYL-svg-uncheck);
+        -webkit-mask-size: 18px;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-image: var(--QYL-svg-uncheck);
+        mask-size: 18px;
+        mask-repeat: no-repeat;
+        mask-position: center;
+    }
+    &:hover::before {
+        opacity: 1;
+    }
+}
+.protyle-wysiwyg .li.protyle-task--done>.protyle-action--task::before, .av__cell-check::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background: var(--b3-theme-primary);
+    background-image: linear-gradient(to right bottom, 
+    var(--b3-theme-primary),
+    var(--b3-theme-primary),
+    oklch(calc(0.68 + var(--b3-theme-primary-brightness) * 0.02) calc(0.30 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 5deg)),
+    oklch(calc(0.68 + var(--b3-theme-primary-brightness) * 0.02) calc(0.30 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 30deg)));
+    -webkit-mask-image: var(--QYL-svg-checked);
+    -webkit-mask-size: 18px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-image: var(--QYL-svg-checked);
+    mask-size: 18px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+.av__row--select:not(.av__row--header) .av__colsticky .av__firstcol {
+    & svg {
+        opacity: 0;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0.55em;
+        left: 0.2em;
+        width: 18px;
+        height: 18px;
+        background: var(--b3-theme-primary);
+        background-image: linear-gradient(to right bottom, 
+        var(--b3-theme-primary),
+        var(--b3-theme-primary),
+        oklch(calc(0.68 + var(--b3-theme-primary-brightness) * 0.02) calc(0.30 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 5deg)),
+        oklch(calc(0.68 + var(--b3-theme-primary-brightness) * 0.02) calc(0.30 * max(0.35, var(--b3-theme-primary-saturate))) calc(var(--b3-theme-primary-main) + 30deg)));
+        -webkit-mask-image: var(--QYL-svg-checked);
+        -webkit-mask-size: 18px;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-image: var(--QYL-svg-checked);
+        mask-size: 18px;
+        mask-repeat: no-repeat;
+        mask-position: center;
+    }
+}
+.protyle-wysiwyg .li[data-subtype=t].protyle-task--done > div[data-node-id].p {
+    opacity: 0.6;
+}
+/* 列表 */
+.protyle-wysiwyg [data-node-id].li::before {
+    border-color: var(--b3-theme-surface-lighter);
+}
+.protyle-wysiwyg [data-node-id].li:hover::before {
+    border-color: var(--b3-theme-surface-lighter);
+}
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.protyle-action {
+    color: var(--b3-theme-primary);
+    color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main));
+    & svg {
+        color: var(--b3-theme-primary);
+        color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main));
+    }
+    &::after {
+        background-color: var(--QYL-tab-item-focus);
+        transform: scale(1.5);
+    }
+}
+.protyle .protyle-wysiwyg .li[data-subtype=o]>.protyle-action:hover, .protyle .protyle-wysiwyg .li[data-subtype=u]>.protyle-action:hover, .protyle .protyle-wysiwyg[data-readonly=false] .li[data-subtype=t]>.protyle-action:hover {
+    color: var(--b3-theme-primary);
+    color: oklch(calc(0.7 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main));
+}
+.protyle .protyle-wysiwyg .li[data-subtype=o]>.protyle-action:hover::after, .protyle .protyle-wysiwyg .li[data-subtype=u]>.protyle-action:hover::after, .protyle .protyle-wysiwyg[data-readonly=false] .li[data-subtype=t]>.protyle-action:hover::after {
+    background-color: var(--QYL-tab-item-focus);
+}
+.protyle-wysiwyg [data-node-id].li[data-subtype="t"]:not([fold="1"])>.protyle-action::after {
+    background-color: transparent !important;
+}
+/* 标记 */
+.b3-typography mark, .b3-typography span[data-type~=mark], .protyle-wysiwyg mark, .protyle-wysiwyg span[data-type~=mark] {
+    background: linear-gradient(transparent 50%, var(--b3-protyle-inline-mark-background) 50%);
+}
+/* 下划线 */
+.b3-typography u, .b3-typography span[data-type~=u], .protyle-wysiwyg u, .protyle-wysiwyg span[data-type~=u] {
+    border-bottom: 1.5px solid;
+}
+/* 代码块 */
+.b3-typography .code-block, .protyle-wysiwyg .code-block {
+    background-color: var(--b3-theme-surface);
+}
+#preview .b3-typography .code-block, #preview .protyle-wysiwyg .code-block {
+    background-color: #f4f4f4;
+}
+.protyle-linenumber__rows>span::before {
+    color: var(--b3-theme-primary);
+}
+.b3-typography div.hljs, .protyle-wysiwyg div.hljs {
+    padding: 2em 1em 0.2em 1em;
+}
+.b3-typography .code-block:not(pre) .protyle-action, .protyle-wysiwyg .code-block:not(pre) .protyle-action {
+    top: 6px;
+    & .protyle-action__language {
+        opacity: 0.6;
+        transition: var(--b3-transition);
+    }
+    &:hover {
+        color: var(--b3-theme-primary);
+        & .protyle-action__language {
+            color: var(--b3-theme-primary);
+            opacity: 1;
+            &:hover {
+                color: var(--b3-theme-primary);
+            }
+        }
+    }
+}
+.protyle-wysiwyg [data-node-id][fold="1"]:not(.li):not([data-type=NodeHeading]).code-block .protyle-action__language {
+    margin-left: 1.5em;
+    margin-top: -9px;
+}
+/* iframe */
+.b3-typography iframe, .protyle-wysiwyg iframe {
+    border-radius: var(--b3-border-radius);
+    border: none;
+    box-shadow: var(--b3-shadow-outside);
+}
+.protyle-wysiwyg [data-node-id].iframe {
+    &:hover .protyle-action__drag {
+        opacity: 0.3;
+    }
+    & .protyle-action__drag {
+        display: inline-block;
+        opacity: 0;
+        height: 48px;
+        width: 48px;
+        background-color: var(--b3-theme-primary);
+        -webkit-mask-image: var(--QYL-svg-resize);
+        mask-image: var(--QYL-svg-resize);
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        right: -20px;
+        bottom: -20px;
+        &:hover {
+            opacity: 1;
+            box-shadow: none;
+            background-color: var(--b3-theme-primary);
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+:is(#preview, [data-key="dialog-exportimage"]) .protyle-wysiwyg [data-node-id].iframe .protyle-action__drag {
+    right: 0;
+    bottom: 0;
+}
+/* 视频块 */
+.b3-typography video, .protyle-wysiwyg video {
+    border-radius: var(--b3-border-radius);
+    border: none;
+    box-shadow: var(--b3-shadow-outside);
+}
+/* 图片块 */
+.protyle-wysiwyg [data-node-id] .img .protyle-action__drag {
+    box-shadow: none;
+    background: var(--b3-theme-primary);
+    width: 6px;
+    opacity: 0.3;
+    &:hover {
+        box-shadow: none;
+        background: var(--b3-theme-primary);
+        width: 6px;
+        opacity: 1;
+    }
+}
+.protyle-wysiwyg [data-node-id] .img--select {
+    filter: brightness(1);
+    & img {
+        box-shadow: var(--b3-point-shadow);
+    }
+}
+/* 引用计数器 */
+.protyle-attr--refcount {
+    background-color: var(--QYL-tab-item-focus);
+    transition: var(--b3-transition);
+    &:hover {
+        background-color: var(--b3-theme-primary);
+        color: var(--b3-theme-on-primary);
+    }
+}

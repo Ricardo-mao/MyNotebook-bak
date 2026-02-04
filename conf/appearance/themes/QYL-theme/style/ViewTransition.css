@@ -1,0 +1,27 @@
+@keyframes QYL-theme-fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes QYL-theme-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+}
+::view-transition-old(root) {
+    animation-name: QYL-theme-fade-out;
+}
+::view-transition-new(root) {
+    animation-name: QYL-theme-fade-in;
+}

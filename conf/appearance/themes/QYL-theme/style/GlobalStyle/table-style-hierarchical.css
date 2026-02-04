@@ -1,0 +1,11 @@
+/* 层次表格 */
+html {
+    & .protyle-wysiwyg [data-node-id] table tr:nth-child(even) td {
+        --QYL-table-even-color: var(--QYL-tab-item);
+        background-color: var(--QYL-table-even-color);
+    }
+    & .protyle-wysiwyg [data-node-id] table th {
+        --QYL-table-even-color: var(--QYL-tab-item);
+        background-color: var(--QYL-table-even-color);
+    }
+}

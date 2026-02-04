@@ -1,0 +1,93 @@
+@media (min-width: 630px) {
+    #dockBottom:not(.fn__none) + #status {
+        bottom: 48px !important;
+    }
+    #toolbar ~ #status {
+        bottom: 12px;
+    }
+    .QYLColorBlock #toolbar ~ #status {
+        bottom: 6px;
+    }
+    .body--window #status {
+        right: 6px;
+    }
+    #status {
+        position: fixed;
+        display: flex;
+        z-index: 4;
+        border-radius: 12px;
+        border: 1px solid var(--b3-theme-surface-lighter);
+        box-shadow: var(--b3-status-shadow);
+        right: 0;
+        bottom: 6px;
+        height: 27px;
+        align-items: center;
+        background: var(--QYL-status-background); 
+        transition: transform 0.45s cubic-bezier(0.33, 1.42, 0.69, 0.99);
+        transform: translateX(calc(-1 * var(--QYL-status-transformX) - 6px));
+        animation: QYLStatusSwitch1 0.3s cubic-bezier(0.33, 1.7, 0.69, 0.99);
+        transform-origin: right bottom;
+        & #barDock {
+            position: relative;
+            order: 1;
+        }
+        & .toolbar__item {
+          &:hover {
+            background-color: var(--b3-list-hover) !important;
+          }
+        }
+        &.QYLStatusHidden {
+            transform-origin: right bottom;
+            animation: QYLStatusSwitch2 0.3s cubic-bezier(0.33, 1.7, 0.69, 0.99);
+            &:hover { 
+                animation: QYLStatusSwitch3 0.3s cubic-bezier(0.33, 1.7, 0.69, 0.99);
+            }
+        }
+        &.QYLStatusHidden:not(:hover) {
+            border-radius: 12px;
+            height: 15px;
+            width: 30px;
+            & * {
+                display: none;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 4px;
+                height: 4px;
+                background: var(--b3-theme-primary-light);
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow:
+                    -7px 0 0 0 var(--b3-theme-primary-light),
+                    7px 0 0 0 var(--b3-theme-primary-light);
+            }
+        }
+    }
+}
+@keyframes QYLStatusSwitch1 {
+    0% {
+      transform: translateX(calc(-1 * var(--QYL-status-transformX) - 6px)) scaleX(0.3) scaleY(0.8);
+    }
+    100% {
+      transform: translateX(calc(-1 * var(--QYL-status-transformX) - 6px)) scaleX(1) scaleY(1);
+    }
+}
+@keyframes QYLStatusSwitch2 {
+  0% {
+    transform: translateX(calc(-1 * var(--QYL-status-transformX) - 6px)) scaleX(1.5) scaleY(1.1);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--QYL-status-transformX) - 6px)) scaleX(1) scaleY(1);
+  }
+}
+@keyframes QYLStatusSwitch3 {
+  0% {
+    transform: translateX(calc(-1 * var(--QYL-status-transformX) - 6px)) scaleX(0.4) scaleY(0.8);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--QYL-status-transformX) - 6px)) scaleX(1) scaleY(1);
+  }
+}

@@ -1,0 +1,461 @@
+.QYLColorPickContainer {
+    padding: 15px;
+    min-width: 300px;
+}
+/* 色相 */
+.QYLHueSlider {
+    height: 15px;
+}
+.QYLHueInput {
+    width: 100%;
+    height: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(to right, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 0deg) 0%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 15deg) 4.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 30deg) 8.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 45deg) 12.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 60deg) 16.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 75deg) 20.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 90deg) 25%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 105deg) 29.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 120deg) 33.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 135deg) 37.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 150deg) 41.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 165deg) 45.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 180deg) 50%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 195deg) 54.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 210deg) 58.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 225deg) 62.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 240deg) 66.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 255deg) 70.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 270deg) 75%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 285deg) 79.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 300deg) 83.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 315deg) 87.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 330deg) 91.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 345deg) 95.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 360deg) 100%);
+    -webkit-appearance: none;
+    appearance: none;
+}
+[data-theme-mode="dark"] .QYLHueInput {
+    background: linear-gradient(to right, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 0deg) 0%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 15deg) 4.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 30deg) 8.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 45deg) 12.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 60deg) 16.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 75deg) 20.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 90deg) 25%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 105deg) 29.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 120deg) 33.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 135deg) 37.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 150deg) 41.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 165deg) 45.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 180deg) 50%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 195deg) 54.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 210deg) 58.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 225deg) 62.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 240deg) 66.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 255deg) 70.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 270deg) 75%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 285deg) 79.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 300deg) 83.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 315deg) 87.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 330deg) 91.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 345deg) 95.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 360deg) 100%);
+}
+.QYLHueInput::-webkit-slider-runnable-track  {
+    background-color: transparent !important;
+    background: linear-gradient(to right, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 0deg) 0%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 15deg) 4.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 30deg) 8.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 45deg) 12.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 60deg) 16.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 75deg) 20.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 90deg) 25%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 105deg) 29.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 120deg) 33.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 135deg) 37.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 150deg) 41.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 165deg) 45.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 180deg) 50%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 195deg) 54.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 210deg) 58.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 225deg) 62.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 240deg) 66.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 255deg) 70.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 270deg) 75%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 285deg) 79.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 300deg) 83.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 315deg) 87.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 330deg) 91.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 345deg) 95.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 360deg) 100%);
+    border-radius: 12px;
+    height: 10px;
+}
+.QYLHueInput::-moz-range-track {
+    background-color: transparent !important;
+    background: linear-gradient(to right, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 0deg) 0%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 15deg) 4.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 30deg) 8.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 45deg) 12.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 60deg) 16.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 75deg) 20.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 90deg) 25%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 105deg) 29.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 120deg) 33.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 135deg) 37.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 150deg) 41.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 165deg) 45.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 180deg) 50%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 195deg) 54.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 210deg) 58.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 225deg) 62.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 240deg) 66.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 255deg) 70.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 270deg) 75%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 285deg) 79.17%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 300deg) 83.33%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 315deg) 87.5%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 330deg) 91.67%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 345deg) 95.83%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) 360deg) 100%);
+    border-radius: 12px;
+    height: 10px;
+}
+[data-theme-mode="dark"] .QYLHueInput::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 0deg) 0%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 15deg) 4.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 30deg) 8.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 45deg) 12.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 60deg) 16.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 75deg) 20.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 90deg) 25%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 105deg) 29.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 120deg) 33.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 135deg) 37.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 150deg) 41.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 165deg) 45.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 180deg) 50%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 195deg) 54.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 210deg) 58.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 225deg) 62.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 240deg) 66.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 255deg) 70.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 270deg) 75%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 285deg) 79.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 300deg) 83.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 315deg) 87.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 330deg) 91.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 345deg) 95.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 360deg) 100%);
+}
+[data-theme-mode="dark"] .QYLHueInput::-moz-range-track  {
+    background: linear-gradient(to right, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 0deg) 0%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 15deg) 4.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 30deg) 8.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 45deg) 12.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 60deg) 16.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 75deg) 20.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 90deg) 25%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 105deg) 29.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 120deg) 33.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 135deg) 37.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 150deg) 41.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 165deg) 45.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 180deg) 50%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 195deg) 54.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 210deg) 58.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 225deg) 62.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 240deg) 66.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 255deg) 70.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 270deg) 75%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 285deg) 79.17%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 300deg) 83.33%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 315deg) 87.5%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 330deg) 91.67%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 345deg) 95.83%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) 360deg) 100%);
+}
+.QYLHueInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-background) !important;
+    cursor: grab;
+    box-sizing: content-box;
+    margin-top: -8px !important;
+}
+.QYLHueInput::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.35, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-background) !important;
+    cursor: grab;
+    box-sizing: content-box;
+    margin-top: -8px !important;
+}
+[data-theme-mode="dark"] .QYLHueInput::-webkit-slider-thumb {
+    background: oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-on-surface-light) !important;
+}
+[data-theme-mode="dark"] .QYLHueInput::-moz-range-thumb {
+    background: oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) calc(0.25 * max(0.45, var(--b3-theme-primary-saturate))) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-on-surface-light) !important;
+}
+/* 饱和度 */
+.QYLSaturationSlider {
+    margin-top: 10px;
+    height: 15px;
+}
+.QYLSaturationInput {
+    width: 100%;
+    height: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(to right, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0 var(--b3-theme-primary-main)) 0%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0.2 var(--b3-theme-primary-main)) 50%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0.35 var(--b3-theme-primary-main)) 100%);
+    -webkit-appearance: none;
+    appearance: none;
+}
+[data-theme-mode="dark"] .QYLSaturationInput {
+    background: linear-gradient(to right, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0 var(--b3-theme-primary-main)) 0%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0.1 var(--b3-theme-primary-main)) 50%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0.35 var(--b3-theme-primary-main)) 100%);
+}
+.QYLSaturationInput::-webkit-slider-runnable-track {
+    background-color: transparent !important;
+    background: linear-gradient(to right, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0 var(--b3-theme-primary-main)) 0%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0.2 var(--b3-theme-primary-main)) 50%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0.35 var(--b3-theme-primary-main)) 100%);
+    border-radius: 12px;
+    height: 10px;
+}
+.QYLSaturationInput::-moz-range-track {
+    background: linear-gradient(to right, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0 var(--b3-theme-primary-main)) 0%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0.2 var(--b3-theme-primary-main)) 50%, 
+        oklch(calc(0.95 + var(--b3-theme-primary-brightness) * 0.02) 0.35 var(--b3-theme-primary-main)) 100%);
+    border-radius: 12px;
+    height: 10px;
+    border: none;
+}
+[data-theme-mode="dark"] .QYLSaturationInput::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0 var(--b3-theme-primary-main)) 0%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0.1 var(--b3-theme-primary-main)) 50%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0.35 var(--b3-theme-primary-main)) 100%);
+}
+[data-theme-mode="dark"] .QYLSaturationInput::-moz-range-track {
+    background: linear-gradient(to right, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0 var(--b3-theme-primary-main)) 0%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0.1 var(--b3-theme-primary-main)) 50%, 
+        oklch(calc(0.45 + var(--b3-theme-primary-brightness) * 0.02) 0.35 var(--b3-theme-primary-main)) 100%);
+}
+.QYLSaturationInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: oklch(0.95 calc(0.233 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-background) !important;
+    cursor: grab;
+    box-sizing: content-box;
+    margin-top: -8px !important;
+}
+.QYLSaturationInput::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: oklch(0.95 calc(0.233 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-background) !important;
+    cursor: grab;
+    box-sizing: content-box;
+    margin-top: -8px !important;
+}
+[data-theme-mode="dark"] .QYLSaturationInput::-webkit-slider-thumb {
+    background: oklch(0.55 calc(0.233 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-on-surface-light) !important;
+}
+[data-theme-mode="dark"] .QYLSaturationInput::-moz-range-thumb {
+    background: oklch(0.55 calc(0.233 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-on-surface-light) !important;
+}
+/* 亮度 */
+.QYLBrightnessSlider {
+    margin-top: 10px;
+    height: 15px;
+}
+.QYLBrightnessInput {
+    width: 100%;
+    height: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(to right, 
+        oklch(0.8 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 0%, 
+        oklch(0.85 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 25%, 
+        oklch(0.9 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 50%, 
+        oklch(0.95 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 75%, 
+        oklch(1 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 100%);
+    -webkit-appearance: none;
+    appearance: none;
+}
+[data-theme-mode="dark"] .QYLBrightnessInput {
+    background: linear-gradient(to right, 
+        oklch(0.1 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 0%, 
+        oklch(0.15 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 25%, 
+        oklch(0.2 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 50%, 
+        oklch(0.25 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 75%, 
+        oklch(0.3 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 100%);
+}
+.QYLBrightnessInput::-webkit-slider-runnable-track {
+    background-color: transparent !important;
+    background: linear-gradient(to right, 
+    oklch(0.8 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 0%, 
+    oklch(0.85 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 25%, 
+    oklch(0.9 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 50%, 
+    oklch(0.95 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 75%, 
+    oklch(1 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 100%);
+    border-radius: 12px;
+    height: 10px;
+}
+.QYLBrightnessInput::-moz-range-track {
+    background: linear-gradient(to right, 
+        oklch(0.8 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 0%, 
+        oklch(0.85 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 25%, 
+        oklch(0.9 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 50%, 
+        oklch(0.95 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 75%, 
+        oklch(1 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 100%);
+    border-radius: 12px;
+    height: 10px;
+    border: none;
+}
+[data-theme-mode="dark"] .QYLBrightnessInput::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, 
+    oklch(0.1 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 0%, 
+    oklch(0.15 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 25%, 
+    oklch(0.2 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 50%, 
+    oklch(0.25 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 75%, 
+    oklch(0.3 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 100%)
+}
+[data-theme-mode="dark"] .QYLBrightnessInput::-moz-range-track {
+    background: linear-gradient(to right, 
+        oklch(0.1 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 0%, 
+        oklch(0.15 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 25%, 
+        oklch(0.2 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 50%, 
+        oklch(0.25 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 75%, 
+        oklch(0.3 calc(0.15 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) 100%)
+}
+.QYLBrightnessInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: oklch(0.8 calc(0.25 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-background) !important;
+    cursor: grab;
+    box-sizing: content-box;
+    margin-top: -8px !important;
+}
+.QYLBrightnessInput::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: oklch(0.8 calc(0.25 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-background) !important;
+    cursor: grab;
+    box-sizing: content-box;
+    margin-top: -8px !important;
+}
+[data-theme-mode="dark"] .QYLBrightnessInput::-webkit-slider-thumb {
+    background: oklch(0.6 calc(0.25 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-on-surface-light) !important;
+}
+[data-theme-mode="dark"] .QYLBrightnessInput::-moz-range-thumb {
+    background: oklch(0.6 calc(0.25 * var(--b3-theme-primary-saturate)) var(--b3-theme-primary-main)) !important;
+    border: 2px solid var(--b3-theme-on-surface-light) !important;
+}
+/* Color Input */
+.QYLColorInput {
+    position: absolute;
+    top: -2px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 50%;
+    background: transparent;
+    & ~ .QYLHueSlider {
+        width: calc(100% - 22px);
+    }
+}
+.QYLColorInput::-webkit-color-swatch-wrapper {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+}
+.QYLColorInput::-webkit-color-swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+}
+.QYLColorInput::-moz-color-swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+}
+/* QYLColorInputDisplay 样式 */
+.QYLColorInputDisplay {
+    position: absolute;
+    top: -2px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 50%;
+    background: var(--b3-theme-primary);
+    &:is(.QYLCustomColorPick .QYLColorInputDisplay) {
+        background: var(--QYL-custom-primary-pick);
+    }
+}
+.QYLCustomColorPick .QYLBrightnessSlider {
+    filter: saturate(0);
+    pointer-events: none;
+}
+.QYLCustomColorPick #QYLDarkRevert {
+    opacity: 0.5;
+    pointer-events: none;
+    color: var(--b3-theme-on-surface-light) !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
